@@ -142,13 +142,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('/assets/inicio.jpg') center center no-repeat;
-            background-size: 120% 100%; /* prueba 110–120 hasta que te guste */
+            background: url('/assets/inicio.jpg') center/cover;
             filter: grayscale(100%) brightness(0.4);
-            transform: scale(1.05);
+            transform: scale(1.1);
             animation: heroZoom 20s ease-in-out infinite alternate;
         }
-
 
         @keyframes heroZoom {
             0% { transform: scale(1.1); }
@@ -715,6 +713,47 @@
             color: var(--bg-dark);
         }
 
+        .btn-ver-mas {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.7rem;
+            letter-spacing: 0.15rem;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+
+        .btn-ver-mas:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .btn-ver-mas-edu {
+            display: block;
+            margin-top: 1.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.75rem;
+            letter-spacing: 0.1rem;
+            transition: var(--transition);
+        }
+
+        .btn-ver-mas-edu:hover {
+            color: var(--accent);
+        }
+
+        .btn-ver-mas-edu::after {
+            content: ' →';
+            transition: var(--transition);
+        }
+
+        .btn-ver-mas-edu:hover::after {
+            margin-left: 0.5rem;
+        }
+
         @media (max-width: 900px) {
             .educadora-section { padding: 4rem 2rem; }
             .educadora-content { grid-template-columns: 1fr; gap: 2rem; }
@@ -1046,6 +1085,7 @@
                         <p>Colaboraciones</p>
                     </div>
                 </div>
+                <a href="cantante.html" class="btn-ver-mas">Descubrir más sobre mi música</a>
             </div>
         </div>
     </section>
@@ -1179,6 +1219,7 @@
             <div class="cta-educadora reveal">
                 <p>¿Quieres llevar la magia de la música a tu cole o evento?</p>
                 <a href="#contacto" class="btn-reservar">Solicitar Información</a>
+                <a href="educadora.html" class="btn-ver-mas-edu">Conocer más sobre mi labor educativa</a>
             </div>
         </div>
     </section>
@@ -1254,7 +1295,7 @@
         <span class="section-title reveal">Contacto</span>
         <h2 class="reveal">Trabajemos juntos</h2>
         <p class="reveal">¿Tienes un proyecto en mente? Me encantaría saber de ti.</p>
-        <a href="mailto:soysofiarico@gmail.com" class="contact-email reveal">soysofiarico@gmail.com</a>
+        <a href="mailto:tu@email.com" class="contact-email reveal">tu@email.com</a>
         <div class="social-links reveal">
             <a href="#" aria-label="Instagram">IG</a>
             <a href="#" aria-label="YouTube">YT</a>
@@ -1265,7 +1306,7 @@
 
     <!-- Footer -->
     <footer>
-        <span>© 2025 Sofia Rico. Todos los derechos reservados.</span>
+        <span>© 2025 Sofía Rico. Todos los derechos reservados.</span>
         <span>Diseñado con pasión</span>
     </footer>
 
