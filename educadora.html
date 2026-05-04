@@ -4,482 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educadora Infantil | Sofía Rico</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --text-light: #ffffff;
-            --text-muted: #888888;
-            --accent: #c9a962;
-            --accent-soft: rgba(201, 169, 98, 0.1);
-            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 1.5rem 4rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-        }
-        .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
-            font-weight: 400;
-            letter-spacing: 0.3rem;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: var(--text-light);
-        }
-        .nav-links { display: flex; gap: 3rem; list-style: none; }
-        .nav-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 0.75rem;
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
-            font-weight: 300;
-            position: relative;
-            padding: 0.5rem 0;
-            transition: var(--transition);
-        }
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: var(--accent);
-            transition: var(--transition);
-        }
-        .nav-links a:hover::after { width: 100%; }
-
-        /* Hero */
-        .page-hero {
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .page-hero-bg {
-            position: absolute;
-            inset: 0;
-            background: url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1920') center/cover;
-            filter: grayscale(100%) brightness(0.3);
-        }
-        .page-hero-content {
-            position: relative;
-            text-align: center;
-            z-index: 1;
-        }
-        .page-hero-content h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(2rem, 8vw, 4.5rem);
-            font-weight: 300;
-            letter-spacing: 0.5rem;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
-        .page-hero-content p {
-            font-size: 0.85rem;
-            letter-spacing: 0.3rem;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-        .breadcrumb {
-            position: absolute;
-            bottom: 2rem;
-            left: 4rem;
-            font-size: 0.7rem;
-            letter-spacing: 0.1rem;
-            color: var(--text-muted);
-        }
-        .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: var(--transition); }
-        .breadcrumb a:hover { color: var(--accent); }
-
-        /* Sections */
-        section { padding: 6rem 4rem; max-width: 1400px; margin: 0 auto; }
-        .section-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 0.85rem;
-            letter-spacing: 0.4rem;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-bottom: 3rem;
-            display: inline-block;
-        }
-
-        /* Filosofía */
-        .filosofia {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-        .filosofia-text h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.5rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
-            line-height: 1.3;
-        }
-        .filosofia-text p {
-            font-weight: 300;
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-        .filosofia-image img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            filter: grayscale(20%);
-        }
-
-        /* Cuento Destacado */
-        .cuento-destacado {
-            background: var(--bg-darker);
-            padding: 6rem 4rem;
-            max-width: none;
-        }
-        .cuento-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 4rem;
-            align-items: center;
-        }
-        .cuento-book-large {
-            perspective: 1000px;
-            display: flex;
-            justify-content: center;
-        }
-        .book-3d {
-            width: 280px;
-            height: 380px;
-            background: linear-gradient(145deg, #1a1a1a 0%, #0a0a0a 100%);
-            border: 1px solid rgba(201, 169, 98, 0.3);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            text-align: center;
-            transform: rotateY(-15deg) rotateX(5deg);
-            transition: var(--transition);
-            box-shadow: 20px 20px 60px rgba(0,0,0,0.6);
-            position: relative;
-        }
-        .book-3d:hover { transform: rotateY(0deg) rotateX(0deg); }
-        .book-3d::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 12px;
-            height: 100%;
-            background: linear-gradient(90deg, rgba(201, 169, 98, 0.5), rgba(201, 169, 98, 0.1));
-        }
-        .book-3d .icon { font-size: 3rem; color: var(--accent); margin-bottom: 2rem; }
-        .book-3d .title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.3rem;
-            line-height: 1.4;
-            margin-bottom: 1.5rem;
-        }
-        .book-3d .author {
-            font-size: 0.75rem;
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
-            color: var(--accent);
-        }
-        .cuento-details h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.2rem;
-            font-weight: 300;
-            margin-bottom: 1.5rem;
-        }
-        .cuento-details p {
-            color: var(--text-muted);
-            font-weight: 300;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-        .cuento-features-list {
-            list-style: none;
-            margin-top: 2rem;
-        }
-        .cuento-features-list li {
-            padding: 0.8rem 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        .cuento-features-list li::before {
-            content: '✦';
-            color: var(--accent);
-        }
-
-        /* Metodología Expandida */
-        .metodologia-exp {
-            background: var(--accent-soft);
-            padding: 6rem 4rem;
-            max-width: none;
-        }
-        .metodologia-container { max-width: 1400px; margin: 0 auto; }
-        .metodologia-intro {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 4rem;
-        }
-        .metodologia-intro h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.5rem;
-            font-weight: 300;
-            margin-bottom: 1rem;
-        }
-        .metodologia-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-        .metodo-card {
-            background: var(--bg-dark);
-            padding: 2.5rem;
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: var(--transition);
-        }
-        .metodo-card:hover { border-color: rgba(201, 169, 98, 0.3); }
-        .metodo-number {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3rem;
-            color: var(--accent);
-            opacity: 0.5;
-            margin-bottom: 1rem;
-        }
-        .metodo-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-        .metodo-card p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            font-weight: 300;
-            line-height: 1.7;
-        }
-
-        /* Centros Colaboradores */
-        .centros-section { background: var(--bg-darker); padding: 6rem 4rem; max-width: none; }
-        .centros-container { max-width: 1400px; margin: 0 auto; }
-        .centros-intro { text-align: center; margin-bottom: 4rem; }
-        .centros-intro h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.5rem;
-            font-weight: 300;
-            margin-bottom: 1rem;
-        }
-        .centros-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-        }
-        .centro-card {
-            background: rgba(255,255,255,0.02);
-            border: 1px solid rgba(255,255,255,0.05);
-            padding: 2rem;
-            text-align: center;
-            transition: var(--transition);
-        }
-        .centro-card:hover {
-            border-color: rgba(201, 169, 98, 0.3);
-            transform: translateY(-5px);
-        }
-        .centro-icon { font-size: 2rem; margin-bottom: 1rem; }
-        .centro-card h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-        .centro-card span {
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            letter-spacing: 0.1rem;
-        }
-
-        /* Testimonios */
-        .testimonios-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .testimonio-card {
-            padding: 2rem;
-            background: rgba(255,255,255,0.02);
-            border: 1px solid rgba(255,255,255,0.05);
-            position: relative;
-        }
-        .testimonio-card::before {
-            content: '"';
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 4rem;
-            color: var(--accent);
-            opacity: 0.3;
-            position: absolute;
-            top: 1rem;
-            left: 1.5rem;
-            line-height: 1;
-        }
-        .testimonio-text {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            padding-top: 2rem;
-            line-height: 1.7;
-        }
-        .testimonio-author { font-size: 0.8rem; color: var(--accent); }
-        .testimonio-role {
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            display: block;
-            margin-top: 0.3rem;
-        }
-
-        /* Formación */
-        .formacion-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .formacion-item {
-            display: flex;
-            gap: 1.5rem;
-            padding: 1.5rem;
-            background: rgba(255,255,255,0.02);
-            border-left: 2px solid var(--accent);
-        }
-        .formacion-year {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            color: var(--accent);
-            min-width: 60px;
-        }
-        .formacion-item h3 {
-            font-size: 0.95rem;
-            margin-bottom: 0.3rem;
-        }
-        .formacion-item p {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        /* CTA */
-        .cta-section {
-            text-align: center;
-            padding: 8rem 4rem;
-            background: linear-gradient(135deg, var(--bg-darker), var(--bg-dark));
-        }
-        .cta-section h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.5rem;
-            font-weight: 300;
-            margin-bottom: 1rem;
-        }
-        .cta-section p {
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .btn-primary {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            border: 1px solid var(--accent);
-            color: var(--accent);
-            text-decoration: none;
-            font-size: 0.75rem;
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
-            transition: var(--transition);
-            margin: 0 0.5rem;
-        }
-        .btn-primary:hover { background: var(--accent); color: var(--bg-dark); }
-        .btn-secondary {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            border: 1px solid rgba(255,255,255,0.3);
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 0.75rem;
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
-            transition: var(--transition);
-            margin: 0 0.5rem;
-        }
-        .btn-secondary:hover { border-color: var(--text-light); }
-
-        /* Footer */
-        footer {
-            padding: 2rem 4rem;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.7rem;
-            color: var(--text-muted);
-        }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .centros-grid { grid-template-columns: repeat(2, 1fr); }
-            .testimonios-grid { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 768px) {
-            nav { padding: 1rem 2rem; }
-            .nav-links { display: none; }
-            section { padding: 4rem 2rem; }
-            .filosofia { grid-template-columns: 1fr; }
-            .cuento-container { grid-template-columns: 1fr; }
-            .cuento-book-large { margin-bottom: 2rem; }
-            .metodologia-grid { grid-template-columns: 1fr; }
-            .centros-grid { grid-template-columns: 1fr; }
-            .formacion-list { grid-template-columns: 1fr; }
-            .cta-section .btn-primary, .cta-section .btn-secondary { display: block; margin: 0.5rem auto; max-width: 280px; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/educadora.css">
 </head>
 <body>
     <nav>
         <a href="index.html" class="logo">Sofía Rico</a>
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+            <li><a href="index.html#voz">Sobre Mí</a></li>
             <li><a href="index.html#galeria">Galería</a></li>
-            <li><a href="index.html#videos">Videos</a></li>
+            <li><a href="videos.html">Videos</a></li>
             <li><a href="index.html#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -489,9 +24,6 @@
         <div class="page-hero-content">
             <h1>Educadora Infantil</h1>
             <p>Música, cuentos y magia para los más pequeños</p>
-        </div>
-        <div class="breadcrumb">
-            <a href="index.html">Inicio</a> / Educadora
         </div>
     </section>
 
@@ -578,42 +110,42 @@
             </div>
             <div class="centros-grid">
                 <div class="centro-card">
-                    <div class="centro-icon">🏫</div>
+                    <div class="centro-icon">CC</div>
                     <h3>CEIP Cervantes</h3>
                     <span>Madrid · Desde 2020</span>
                 </div>
                 <div class="centro-card">
-                    <div class="centro-icon">🎒</div>
+                    <div class="centro-icon">EI</div>
                     <h3>Escuela Infantil Arcoíris</h3>
                     <span>Madrid · Desde 2019</span>
                 </div>
                 <div class="centro-card">
-                    <div class="centro-icon">📚</div>
+                    <div class="centro-icon">BM</div>
                     <h3>Biblioteca Municipal</h3>
                     <span>Getafe · Desde 2021</span>
                 </div>
                 <div class="centro-card">
-                    <div class="centro-icon">🎭</div>
+                    <div class="centro-icon">CL</div>
                     <h3>Centro Cultural La Corrala</h3>
                     <span>Madrid · Desde 2022</span>
                 </div>
                 <div class="centro-card">
-                    <div class="centro-icon">🌳</div>
+                    <div class="centro-icon">LB</div>
                     <h3>Ludoteca El Bosque</h3>
                     <span>Alcorcón · Desde 2020</span>
                 </div>
                 <div class="centro-card">
-                    <div class="centro-icon">🎨</div>
+                    <div class="centro-icon">PD</div>
                     <h3>Fundación Pequeño Deseo</h3>
                     <span>Colaboración especial</span>
                 </div>
                 <div class="centro-card">
-                    <div class="centro-icon">🏛️</div>
+                    <div class="centro-icon">AM</div>
                     <h3>Ayuntamiento de Madrid</h3>
                     <span>Eventos municipales</span>
                 </div>
                 <div class="centro-card">
-                    <div class="centro-icon">⭐</div>
+                    <div class="centro-icon">HR</div>
                     <h3>Hotel Ritz Madrid</h3>
                     <span>Eventos familiares</span>
                 </div>
@@ -683,4 +215,13 @@
         <h2>¿Quieres llevar la música a tu centro o evento?</h2>
         <p>Estoy disponible para talleres en escuelas, fiestas de cumpleaños, eventos familiares y cualquier ocasión donde los niños quieran pasarlo en grande aprendiendo música.</p>
         <a href="index.html#contacto" class="btn-primary">Solicitar presupuesto</a>
-        <a href="index.html" class="btn-secondary">Volver al inicio
+        <a href="index.html" class="btn-secondary">Volver al inicio</a>
+    </section>
+
+    <footer>
+        <span>© 2025 Sofía Rico. Todos los derechos reservados.</span>
+        <a href="index.html" style="color: var(--text-muted); text-decoration: none;">← Volver al inicio</a>
+    </footer>
+    <script src="assets/js/educadora.js" defer></script>
+</body>
+</html>
