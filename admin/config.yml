@@ -90,20 +90,6 @@ collections:
                   - { label: "Etiqueta", name: "kicker", widget: "string" }
                   - { label: "Título", name: "title", widget: "string" }
                   - { label: "Texto enlace a galería", name: "moreText", widget: "string" }
-              - label: "Formatos"
-                name: "formats"
-                widget: "object"
-                fields:
-                  - { label: "Etiqueta", name: "kicker", widget: "string" }
-                  - { label: "Título", name: "title", widget: "string" }
-                  - label: "Items"
-                    name: "items"
-                    widget: "list"
-                    summary: "{{fields.title}}"
-                    fields:
-                      - { label: "Etiqueta", name: "label", widget: "string" }
-                      - { label: "Título", name: "title", widget: "string" }
-                      - { label: "Texto", name: "text", widget: "text" }
               - label: "Bloque educadora home"
                 name: "educator"
                 widget: "object"
@@ -238,6 +224,24 @@ collections:
                   - { label: "Nombre", name: "title", widget: "string" }
                   - { label: "Lugar", name: "location", widget: "string" }
                   - { label: "Imagen", name: "image", widget: "image" }
+              - label: "Experiencias"
+                name: "experiences"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Introducción", name: "intro", widget: "text" }
+                  - label: "Entradas"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.date}} · {{fields.title}}"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Lugar", name: "place", widget: "string" }
+                      - { label: "Fecha", name: "date", widget: "string" }
+                      - { label: "Imagen", name: "image", widget: "image" }
+                      - { label: "Resumen corto", name: "excerpt", widget: "text" }
+                      - { label: "Texto ampliado", name: "body", widget: "text" }
               - label: "Logos / colaboraciones"
                 name: "collaborations"
                 widget: "list"
@@ -301,6 +305,41 @@ collections:
                   - { label: "Número", name: "number", widget: "string" }
                   - { label: "Título", name: "title", widget: "string" }
                   - { label: "Texto", name: "text", widget: "text" }
+              - label: "Creaciones"
+                name: "creations"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Introducción", name: "intro", widget: "text" }
+                  - label: "Piezas"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.type}} · {{fields.title}}"
+                    fields:
+                      - { label: "Tipo", name: "type", widget: "string" }
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Imagen", name: "image", widget: "image" }
+                      - { label: "Resumen", name: "summary", widget: "text" }
+                      - { label: "Texto ampliado", name: "body", widget: "text" }
+              - label: "Experiencias"
+                name: "experiences"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Introducción", name: "intro", widget: "text" }
+                  - label: "Entradas"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.date}} · {{fields.title}}"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Lugar", name: "place", widget: "string" }
+                      - { label: "Fecha", name: "date", widget: "string" }
+                      - { label: "Imagen", name: "image", widget: "image" }
+                      - { label: "Resumen corto", name: "excerpt", widget: "text" }
+                      - { label: "Texto ampliado", name: "body", widget: "text" }
               - label: "Centros"
                 name: "centers"
                 widget: "list"

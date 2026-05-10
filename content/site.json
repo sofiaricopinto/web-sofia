@@ -71,27 +71,6 @@
       "title": "Una galería con ritmo de dossier profesional.",
       "moreText": "Ver más fotos y momentos en la galería"
     },
-    "formats": {
-      "kicker": "Formatos",
-      "title": "Música en directo para eventos, salas y celebraciones.",
-      "items": [
-        {
-          "label": "Conciertos",
-          "title": "Directo acústico",
-          "text": "Formato íntimo para salas, restaurantes, hoteles, eventos privados o recitales donde la voz necesita respirar."
-        },
-        {
-          "label": "Eventos",
-          "title": "Ceremonias y marca",
-          "text": "Repertorio adaptado, presencia cuidada y una estética visual coherente para bodas, actos culturales y piezas de marca."
-        },
-        {
-          "label": "Contenido",
-          "title": "Reels y sesiones",
-          "text": "Piezas audiovisuales para enseñar el color de la voz, la presencia y el repertorio de una forma elegante."
-        }
-      ]
-    },
     "educator": {
       "kicker": "Educadora musical",
       "title": "¿Qué sucede si la música y la educación se fusionan?",
@@ -292,6 +271,37 @@
         "image": "assets/galeria_4.jpg"
       }
     ],
+    "experiences": {
+      "kicker": "Experiencias",
+      "title": "Actuaciones con historia propia",
+      "intro": "Una selección de momentos escénicos contados con contexto: qué se preparó, cómo fue el espacio y qué quedó de cada actuación.",
+      "items": [
+        {
+          "title": "Concierto acústico de invierno",
+          "place": "Sala íntima · Madrid",
+          "date": "2025",
+          "image": "assets/galeria_1.jpg",
+          "excerpt": "Un formato cercano con piano y voz, pensado para escuchar cada matiz sin artificio.",
+          "body": "La actuación se planteó como un recorrido emocional por repertorio pop, bolero y canciones de teatro musical. La cercanía del espacio permitió trabajar respiraciones, silencios y una comunicación directa con el público."
+        },
+        {
+          "title": "Evento privado con repertorio a medida",
+          "place": "Celebración · Madrid",
+          "date": "2024",
+          "image": "assets/galeria_2.jpg",
+          "excerpt": "Canciones elegidas para acompañar momentos concretos de la celebración.",
+          "body": "La propuesta combinó temas reconocibles con arreglos suaves para mantener una atmósfera elegante. El trabajo previo consistió en adaptar tonalidades, entradas y duración de cada pieza al ritmo del evento."
+        },
+        {
+          "title": "Sesión audiovisual para portfolio",
+          "place": "Estudio · Madrid",
+          "date": "2024",
+          "image": "assets/galeria_3.jpg",
+          "excerpt": "Piezas breves para mostrar voz, gesto y presencia frente a cámara.",
+          "body": "La sesión se diseñó como material de presentación profesional: planos cerrados, luz cuidada y fragmentos donde se entiende la identidad vocal sin depender de una producción excesiva."
+        }
+      ]
+    },
     "collaborations": [
       {
         "name": "Sony Music",
@@ -380,6 +390,65 @@
         "text": "Momentos para improvisar, crear letras y descubrir su propia voz."
       }
     ],
+    "creations": {
+      "kicker": "Creaciones",
+      "title": "Cuentos, canciones e intervenciones educativas",
+      "intro": "Material propio para convertir cada sesión en una experiencia escénica, musical y participativa.",
+      "items": [
+        {
+          "type": "Cuento musical",
+          "title": "Las Melodías del Bosque Encantado",
+          "image": "assets/galeria_4.jpg",
+          "summary": "Una historia participativa donde los peques cantan, se mueven y ayudan a los personajes a avanzar.",
+          "body": "El cuento funciona como hilo conductor de la sesión: cada escena introduce una emoción, un ritmo o una pequeña canción. Está pensado para grupos infantiles y se puede adaptar por edad y duración."
+        },
+        {
+          "type": "Canción original",
+          "title": "Canciones para rutinas y juego",
+          "image": "assets/galeria_5.jpg",
+          "summary": "Pequeñas piezas cantables para bienvenida, movimiento, calma o cierre de actividad.",
+          "body": "Son canciones sencillas, repetibles y con gestos asociados para que los niños puedan entrar rápido en la dinámica. La música ayuda a ordenar la sesión sin cortar el clima de juego."
+        },
+        {
+          "type": "Intervención",
+          "title": "Sesiones temáticas para centros",
+          "image": "assets/galeria_6.jpg",
+          "summary": "Propuestas a medida para bibliotecas, escuelas, ludotecas y eventos familiares.",
+          "body": "Cada intervención combina narración, voz, movimiento y participación. Se puede orientar a estaciones del año, emociones, cuentos concretos o proyectos del centro."
+        }
+      ]
+    },
+    "experiences": {
+      "kicker": "Experiencias",
+      "title": "Sesiones que dejan recuerdo",
+      "intro": "Momentos reales de aula, cuento y escenario contados como pequeñas crónicas editables.",
+      "items": [
+        {
+          "title": "Cuento musical en biblioteca",
+          "place": "Biblioteca municipal",
+          "date": "2025",
+          "image": "assets/galeria_4.jpg",
+          "excerpt": "Una sesión participativa con narración, canciones y movimiento.",
+          "body": "El grupo fue entrando poco a poco en la historia hasta terminar cantando los motivos principales del cuento. La actividad funcionó especialmente bien por la mezcla de escucha, juego y pequeñas intervenciones individuales."
+        },
+        {
+          "title": "Taller de ritmo para infantil",
+          "place": "Escuela infantil",
+          "date": "2024",
+          "image": "assets/galeria_5.jpg",
+          "excerpt": "Percusión corporal, voz y dinámicas de atención para los más pequeños.",
+          "body": "La sesión se centró en trabajar escucha activa y coordinación desde el juego. Los patrones rítmicos se introdujeron con palabras, palmas y movimiento para que cada niño participara a su ritmo."
+        },
+        {
+          "title": "Evento familiar con música y cuento",
+          "place": "Celebración privada",
+          "date": "2024",
+          "image": "assets/galeria_6.jpg",
+          "excerpt": "Un formato flexible para reunir edades distintas alrededor de la música.",
+          "body": "La propuesta combinó canciones conocidas, pequeñas escenas narradas y momentos de participación libre. El objetivo fue sostener la atención sin convertir la actividad en una clase, manteniendo siempre el carácter de celebración."
+        }
+      ]
+    },
     "centers": [
       {
         "initials": "CC",

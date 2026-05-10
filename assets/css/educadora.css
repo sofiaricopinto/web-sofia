@@ -293,6 +293,203 @@
             line-height: 1.7;
         }
 
+        /* Creaciones */
+        .creations-section {
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(180deg, var(--bg-darker), #0d0a0a 55%, var(--bg-dark)),
+                radial-gradient(circle at 85% 20%, rgba(201, 169, 98, 0.14), transparent 24rem);
+            padding: 0 4rem 6rem;
+            max-width: none;
+        }
+        .creation-bridge {
+            width: 1px;
+            height: 110px;
+            margin: 0 auto 2.5rem;
+            background: linear-gradient(to bottom, rgba(201,169,98,0), rgba(201,169,98,0.8), rgba(201,169,98,0));
+            transform-origin: top;
+            animation: bridgePulse 2.6s ease-in-out infinite;
+        }
+        @keyframes bridgePulse {
+            0%, 100% { transform: scaleY(0.65); opacity: 0.45; }
+            50% { transform: scaleY(1); opacity: 1; }
+        }
+        .creations-container { max-width: 1400px; margin: 0 auto; }
+        .creations-intro {
+            max-width: 760px;
+            margin-bottom: 3rem;
+        }
+        .creations-intro h2,
+        .experiences-intro h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.25rem, 4.8vw, 4.5rem);
+            font-weight: 300;
+            line-height: 1.02;
+            margin-bottom: 1rem;
+        }
+        .creations-intro p,
+        .experiences-intro p {
+            color: var(--text-muted);
+            font-weight: 300;
+            line-height: 1.8;
+        }
+        .creations-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .creation-card {
+            position: relative;
+            min-height: 520px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: #111;
+            isolation: isolate;
+        }
+        .creation-card img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(95%) brightness(0.52);
+            transform: scale(1.04);
+            transition: var(--transition);
+            z-index: -2;
+        }
+        .creation-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(to top, rgba(5,5,5,0.94), rgba(5,5,5,0.18) 62%);
+        }
+        .creation-card:hover img {
+            filter: grayscale(12%) brightness(0.72);
+            transform: scale(1.09);
+        }
+        .creation-card > div {
+            padding: 1.6rem;
+        }
+        .creation-card span {
+            color: var(--accent);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.16rem;
+            text-transform: uppercase;
+        }
+        .creation-card h3 {
+            margin: 0.9rem 0;
+            font-size: clamp(1.7rem, 2.6vw, 2.45rem);
+        }
+        .creation-card p,
+        .creation-card details p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.75;
+        }
+        .creation-card details {
+            margin-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1rem;
+        }
+        .creation-card summary {
+            cursor: pointer;
+            color: var(--accent);
+            font-size: 0.74rem;
+            font-weight: 800;
+            letter-spacing: 0.14rem;
+            text-transform: uppercase;
+        }
+
+        /* Experiencias */
+        .experiences-section {
+            background: var(--bg-dark);
+            padding: 6rem 4rem;
+            max-width: none;
+        }
+        .experiences-container { max-width: 1400px; margin: 0 auto; }
+        .experiences-intro {
+            display: grid;
+            grid-template-columns: minmax(0, 0.8fr) minmax(280px, 0.52fr);
+            gap: 2rem;
+            align-items: end;
+            margin-bottom: 3rem;
+        }
+        .experiences-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .experience-card {
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.025);
+            overflow: hidden;
+        }
+        .experience-card summary {
+            cursor: pointer;
+            list-style: none;
+        }
+        .experience-card summary::-webkit-details-marker { display: none; }
+        .experience-media {
+            display: block;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: #111;
+        }
+        .experience-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(92%) brightness(0.62);
+            transition: var(--transition);
+        }
+        .experience-card:hover .experience-media img,
+        .experience-card[open] .experience-media img {
+            filter: grayscale(10%) brightness(0.82);
+            transform: scale(1.05);
+        }
+        .experience-copy {
+            display: grid;
+            gap: 0.55rem;
+            padding: 1.4rem;
+        }
+        .experience-date {
+            color: var(--accent);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.16rem;
+            text-transform: uppercase;
+        }
+        .experience-copy strong {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.7rem;
+            font-weight: 300;
+            line-height: 1.05;
+        }
+        .experience-copy em {
+            color: rgba(255,255,255,0.72);
+            font-size: 0.78rem;
+            font-style: normal;
+            letter-spacing: 0.08rem;
+            text-transform: uppercase;
+        }
+        .experience-copy span:last-child,
+        .experience-body p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.75;
+        }
+        .experience-body {
+            padding: 0 1.4rem 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
         /* Centros Colaboradores */
         .centros-section { background: var(--bg-darker); padding: 6rem 4rem; max-width: none; }
         .centros-container { max-width: 1400px; margin: 0 auto; }
@@ -502,6 +699,8 @@
         @media (max-width: 1024px) {
             .centros-grid { grid-template-columns: repeat(2, 1fr); }
             .testimonios-grid { grid-template-columns: 1fr; }
+            .creations-grid, .experiences-grid { grid-template-columns: 1fr; }
+            .experiences-intro { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
             nav { padding: 1rem 2rem; }
@@ -512,6 +711,7 @@
             .cuento-container { grid-template-columns: 1fr; }
             .cuento-book-large { margin-bottom: 2rem; }
             .metodologia-grid { grid-template-columns: 1fr; }
+            .creations-section, .experiences-section { padding-left: 2rem; padding-right: 2rem; }
             .centros-grid { grid-template-columns: 1fr; }
             .formacion-list { grid-template-columns: 1fr; }
             .cta-section .btn-primary, .cta-section .btn-secondary { display: block; margin: 0.5rem auto; max-width: 280px; }

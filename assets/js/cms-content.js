@@ -83,6 +83,42 @@
         `;
     }
 
+    function experienceCard(item) {
+        return `
+            <details class="experience-card reveal">
+                <summary>
+                    <span class="experience-media"><img src="${esc(item.image)}" alt="${esc(item.title)}"></span>
+                    <span class="experience-copy">
+                        <span class="experience-date">${esc(item.date || item.type || "")}</span>
+                        <strong>${esc(item.title)}</strong>
+                        <em>${esc(item.place || item.summary || "")}</em>
+                        <span>${esc(item.excerpt || item.summary || "")}</span>
+                    </span>
+                </summary>
+                <div class="experience-body">
+                    <p>${esc(item.body)}</p>
+                </div>
+            </details>
+        `;
+    }
+
+    function creationCard(item, index) {
+        return `
+            <article class="creation-card reveal" style="--i:${index + 1}">
+                <img src="${esc(item.image)}" alt="${esc(item.title)}">
+                <div>
+                    <span>${esc(item.type)}</span>
+                    <h3>${esc(item.title)}</h3>
+                    <p>${esc(item.summary)}</p>
+                    <details>
+                        <summary>Leer más</summary>
+                        <p>${esc(item.body)}</p>
+                    </details>
+                </div>
+            </article>
+        `;
+    }
+
     function renderHome(data) {
         const home = data.home;
         if (!home) return;
@@ -120,19 +156,6 @@
         const galleryMore = qs("#galeria .video-more a");
         if (galleryMore) galleryMore.innerHTML = `${esc(home.galleryIntro.moreText)} <span aria-hidden="true">→</span>`;
 
-        const formatSection = qsa(".section.dark-band")[1];
-        if (formatSection) {
-            text(".section-kicker", home.formats.kicker, formatSection);
-            text(".section-heading", home.formats.title, formatSection);
-            html(".services-grid", (home.formats.items || []).map((item) => `
-                <article class="service reveal">
-                    <span>${esc(item.label)}</span>
-                    <h3>${esc(item.title)}</h3>
-                    <p>${esc(item.text)}</p>
-                </article>
-            `).join(""), formatSection);
-        }
-
         text("#educadora .section-kicker", home.educator.kicker);
         text("#educadora .section-heading", home.educator.title);
         text("#educadora .edu-copy h3", home.educator.cardTitle);
@@ -157,6 +180,8 @@
             if (social) {
                 link.href = social.url || "#";
                 link.setAttribute("aria-label", social.name);
+            } else {
+                link.remove();
             }
         });
     }
@@ -204,6 +229,12 @@
         html(".venues-grid", (page.venues || []).map((item) => `
             <div class="venue-card"><img src="${esc(item.image)}" alt="${esc(item.title)}"><div class="venue-info"><h3>${esc(item.title)}</h3><span>${esc(item.location)}</span></div></div>
         `).join(""));
+        if (page.experiences) {
+            text(".experiences-section .section-title", page.experiences.kicker);
+            text(".experiences-intro h2", page.experiences.title);
+            text(".experiences-intro p", page.experiences.intro);
+            html(".experiences-grid", (page.experiences.items || []).map(experienceCard).join(""));
+        }
         html(".colabs-grid", (page.collaborations || []).map((item) => `<div class="colab-item"><img src="${esc(item.logo)}" alt="${esc(item.name)}"></div>`).join(""));
         html(".prensa-grid", (page.press || []).map((item) => `<div class="prensa-item"><p class="prensa-quote">"${esc(item.quote)}"</p><span class="prensa-source">${esc(item.source)}</span></div>`).join(""));
         text(".cta-section h2", page.cta.title);
@@ -232,6 +263,18 @@
         html(".metodologia-grid", (page.methodology || []).map((item) => `
             <div class="metodo-card"><div class="metodo-number">${esc(item.number)}</div><h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></div>
         `).join(""));
+        if (page.creations) {
+            text(".creations-section .section-title", page.creations.kicker);
+            text(".creations-intro h2", page.creations.title);
+            text(".creations-intro p", page.creations.intro);
+            html(".creations-grid", (page.creations.items || []).map(creationCard).join(""));
+        }
+        if (page.experiences) {
+            text(".experiences-section .section-title", page.experiences.kicker);
+            text(".experiences-intro h2", page.experiences.title);
+            text(".experiences-intro p", page.experiences.intro);
+            html(".experiences-grid", (page.experiences.items || []).map(experienceCard).join(""));
+        }
         html(".centros-grid", (page.centers || []).map((item) => `
             <div class="centro-card"><div class="centro-icon">${esc(item.initials)}</div><h3>${esc(item.name)}</h3><span>${esc(item.detail)}</span></div>
         `).join(""));
