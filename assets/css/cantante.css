@@ -839,6 +839,33 @@
             transform: none;
         }
 
+        /* Centrado correcto del popup */
+        .story-modal {
+            position: fixed;
+            inset: 0;
+            margin: auto;
+            width: min(1080px, calc(100% - 2rem));
+            max-height: min(760px, calc(100vh - 2rem));
+            overflow: auto;
+            padding: 0;
+            border: 1px solid rgba(201,169,98,0.36);
+            background: #080808;
+            color: var(--text-light);
+        }
+
+        .story-modal[open] {
+            display: block;
+        }
+
+        .story-modal-grid {
+            min-height: min(560px, calc(100vh - 2rem));
+        }
+
+        .story-modal-copy {
+            max-height: calc(100vh - 2rem);
+            overflow-y: auto;
+        }
+
         @media (max-width: 900px) {
             .menu-toggle { display: flex; }
             .site-nav .nav-links {
@@ -865,3 +892,5 @@
                 grid-template-columns: 1fr;
             }
         }
+
+
