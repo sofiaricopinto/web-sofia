@@ -1,0 +1,332 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "https://sofiaricopinto.com"
+display_url: "https://sofiaricopinto.com"
+logo_url: "/assets/inicio.jpg"
+
+collections:
+  - name: "site"
+    label: "Contenido de la web"
+    files:
+      - name: "content"
+        label: "Todo el contenido editable"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "Ajustes generales"
+            name: "site"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Título SEO", name: "title", widget: "string" }
+              - { label: "Descripción SEO", name: "description", widget: "text" }
+              - { label: "Nombre / marca", name: "brand", widget: "string" }
+              - { label: "Email de contacto", name: "email", widget: "string" }
+              - { label: "Copyright", name: "copyright", widget: "string" }
+              - { label: "Texto footer", name: "footerText", widget: "string" }
+              - label: "Redes sociales"
+                name: "socials"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+
+          - label: "Home"
+            name: "home"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Portada"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+                  - { label: "Imagen de fondo", name: "background", widget: "image" }
+              - label: "Texto que se desplaza"
+                name: "marquee"
+                widget: "list"
+                field: { label: "Texto", name: "text", widget: "string" }
+              - label: "Sección La voz"
+                name: "voice"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Imagen", name: "image", widget: "image" }
+                  - label: "Párrafos"
+                    name: "paragraphs"
+                    widget: "list"
+                    field: { label: "Párrafo", name: "paragraph", widget: "text" }
+                  - label: "Estadísticas"
+                    name: "stats"
+                    widget: "list"
+                    summary: "{{fields.number}} {{fields.label}}"
+                    fields:
+                      - { label: "Número", name: "number", widget: "string" }
+                      - { label: "Texto", name: "label", widget: "string" }
+                  - { label: "Texto del botón", name: "buttonText", widget: "string" }
+                  - { label: "Enlace del botón", name: "buttonUrl", widget: "string" }
+              - label: "Intro videos home"
+                name: "videosIntro"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Texto enlace a videos", name: "moreText", widget: "string" }
+              - label: "Intro galería home"
+                name: "galleryIntro"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto enlace a galería", name: "moreText", widget: "string" }
+              - label: "Formatos"
+                name: "formats"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.title}}"
+                    fields:
+                      - { label: "Etiqueta", name: "label", widget: "string" }
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Texto", name: "text", widget: "text" }
+              - label: "Bloque educadora home"
+                name: "educator"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título sección", name: "title", widget: "string" }
+                  - { label: "Título caja", name: "cardTitle", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Imagen", name: "image", widget: "image" }
+                  - { label: "Texto botón", name: "buttonText", widget: "string" }
+                  - { label: "URL botón", name: "buttonUrl", widget: "string" }
+              - label: "Contacto"
+                name: "contact"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+
+          - label: "Media: videos, fotos y audios"
+            name: "media"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Videos destacados de la home"
+                name: "featuredVideos"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+                  - { label: "Archivo video", name: "src", widget: "file", media_library: { config: { multiple: false } } }
+              - label: "Todos los videos"
+                name: "allVideos"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+                  - { label: "Archivo video", name: "src", widget: "file", media_library: { config: { multiple: false } } }
+              - label: "Fotos galería"
+                name: "gallery"
+                widget: "list"
+                summary: "{{fields.alt}}"
+                fields:
+                  - { label: "Imagen", name: "image", widget: "image" }
+                  - { label: "Texto alternativo", name: "alt", widget: "string" }
+              - label: "Audios"
+                name: "audios"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Etiqueta", name: "label", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Archivo audio", name: "src", widget: "file" }
+
+          - label: "Página videos"
+            name: "videosPage"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Portada"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Imagen fondo", name: "background", widget: "image" }
+              - label: "Cabecera videos"
+                name: "videosHeader"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Cabecera galería"
+                name: "galleryHeader"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Cabecera audio"
+                name: "audioHeader"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+
+          - label: "Página cantante"
+            name: "singerPage"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Portada"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+                  - { label: "Imagen fondo", name: "background", widget: "image" }
+              - label: "Historia"
+                name: "history"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Imagen", name: "image", widget: "image" }
+                  - label: "Párrafos"
+                    name: "paragraphs"
+                    widget: "list"
+                    field: { label: "Párrafo", name: "paragraph", widget: "text" }
+              - label: "Repertorio"
+                name: "repertoire"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Trayectoria"
+                name: "timeline"
+                widget: "list"
+                fields:
+                  - { label: "Año", name: "year", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Escenarios"
+                name: "venues"
+                widget: "list"
+                fields:
+                  - { label: "Nombre", name: "title", widget: "string" }
+                  - { label: "Lugar", name: "location", widget: "string" }
+                  - { label: "Imagen", name: "image", widget: "image" }
+              - label: "Logos / colaboraciones"
+                name: "collaborations"
+                widget: "list"
+                fields:
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "Logo", name: "logo", widget: "image" }
+              - label: "Prensa"
+                name: "press"
+                widget: "list"
+                fields:
+                  - { label: "Cita", name: "quote", widget: "text" }
+                  - { label: "Fuente", name: "source", widget: "string" }
+              - label: "CTA"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Texto botón", name: "buttonText", widget: "string" }
+                  - { label: "URL botón", name: "buttonUrl", widget: "string" }
+
+          - label: "Página educadora"
+            name: "educatorPage"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Portada"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+                  - { label: "Imagen fondo", name: "background", widget: "image" }
+              - label: "Filosofía"
+                name: "philosophy"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Imagen", name: "image", widget: "image" }
+                  - label: "Párrafos"
+                    name: "paragraphs"
+                    widget: "list"
+                    field: { label: "Párrafo", name: "paragraph", widget: "text" }
+              - label: "Cuento"
+                name: "story"
+                widget: "object"
+                fields:
+                  - { label: "Etiqueta", name: "kicker", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Título libro", name: "bookTitle", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - label: "Características"
+                    name: "features"
+                    widget: "list"
+                    field: { label: "Característica", name: "feature", widget: "string" }
+              - label: "Metodología"
+                name: "methodology"
+                widget: "list"
+                fields:
+                  - { label: "Número", name: "number", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Centros"
+                name: "centers"
+                widget: "list"
+                fields:
+                  - { label: "Iniciales", name: "initials", widget: "string" }
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "Detalle", name: "detail", widget: "string" }
+              - label: "Testimonios"
+                name: "testimonials"
+                widget: "list"
+                fields:
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Autor", name: "author", widget: "string" }
+                  - { label: "Rol", name: "role", widget: "string" }
+              - label: "Formación"
+                name: "training"
+                widget: "list"
+                fields:
+                  - { label: "Año", name: "year", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "CTA"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Texto botón", name: "buttonText", widget: "string" }
+                  - { label: "URL botón", name: "buttonUrl", widget: "string" }
