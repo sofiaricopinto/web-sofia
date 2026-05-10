@@ -7,19 +7,38 @@
     "copyright": "© 2026 Sofía Rico. Todos los derechos reservados.",
     "footerText": "Portfolio vocal y dirección artística web.",
     "socials": [
-      { "name": "Instagram", "url": "#" },
-      { "name": "TikTok", "url": "#" },
-      { "name": "Spotify", "url": "#" },
-      { "name": "YouTube", "url": "#" }
+      {
+        "name": "Instagram",
+        "url": "#"
+      },
+      {
+        "name": "TikTok",
+        "url": "#"
+      },
+      {
+        "name": "Spotify",
+        "url": "#"
+      },
+      {
+        "name": "YouTube",
+        "url": "#"
+      }
     ]
   },
   "home": {
     "hero": {
-      "title": "Sofía Rico",
+      "title": "Sofía Ricosssss",
       "subtitle": "Cantante · Artista · Educadora",
       "background": "assets/inicio.jpg"
     },
-    "marquee": ["Pop elegante", "Bolero", "Jazz íntimo", "Eventos privados", "Sesión acústica", "Teatro musical"],
+    "marquee": [
+      "Pop elegante",
+      "Bolero",
+      "Jazz íntimo",
+      "Eventos privados",
+      "Sesión acústica",
+      "Teatro musical"
+    ],
     "voice": {
       "kicker": "La voz",
       "title": "Una voz que conecta con el alma.",
@@ -29,9 +48,18 @@
         "Mi formación clásica combinada con influencias contemporáneas crea un estilo único que resuena con audiencias de todas las edades. Cada actuación es una oportunidad para crear momentos inolvidables."
       ],
       "stats": [
-        { "number": "10+", "label": "Años de experiencia" },
-        { "number": "200+", "label": "Conciertos" },
-        { "number": "50+", "label": "Colaboraciones" }
+        {
+          "number": "10+",
+          "label": "Años de experiencia"
+        },
+        {
+          "number": "200+",
+          "label": "Conciertos"
+        },
+        {
+          "number": "50+",
+          "label": "Colaboraciones"
+        }
       ],
       "buttonText": "Descubrir más sobre mi música",
       "buttonUrl": "cantante.html"
@@ -51,9 +79,21 @@
       "kicker": "Formatos",
       "title": "Música en directo para eventos, salas y celebraciones.",
       "items": [
-        { "label": "Conciertos", "title": "Directo acústico", "text": "Formato íntimo para salas, restaurantes, hoteles, eventos privados o recitales donde la voz necesita respirar." },
-        { "label": "Eventos", "title": "Ceremonias y marca", "text": "Repertorio adaptado, presencia cuidada y una estética visual coherente para bodas, actos culturales y piezas de marca." },
-        { "label": "Contenido", "title": "Reels y sesiones", "text": "Piezas audiovisuales para enseñar el color de la voz, la presencia y el repertorio de una forma elegante." }
+        {
+          "label": "Conciertos",
+          "title": "Directo acústico",
+          "text": "Formato íntimo para salas, restaurantes, hoteles, eventos privados o recitales donde la voz necesita respirar."
+        },
+        {
+          "label": "Eventos",
+          "title": "Ceremonias y marca",
+          "text": "Repertorio adaptado, presencia cuidada y una estética visual coherente para bodas, actos culturales y piezas de marca."
+        },
+        {
+          "label": "Contenido",
+          "title": "Reels y sesiones",
+          "text": "Piezas audiovisuales para enseñar el color de la voz, la presencia y el repertorio de una forma elegante."
+        }
       ]
     },
     "educator": {
@@ -73,27 +113,81 @@
   },
   "media": {
     "featuredVideos": [
-      { "title": "Ensayo vocal", "subtitle": "Voz cercana · Piano · Trabajo real", "src": "assets/ssstik.io_@__sofiarico___1777674397815.mp4" },
-      { "title": "Directo escénico", "subtitle": "Presencia · Luz · Interpretación", "src": "assets/ssstik.io_@__sofiarico___1777674450818.mp4" },
-      { "title": "Repertorio pop", "subtitle": "Cover · Emoción · Formato social", "src": "assets/ssstik.io_@__sofiarico___1777674516631.mp4" }
+      {
+        "title": "Ensayo vocal",
+        "subtitle": "Voz cercana · Piano · Trabajo real",
+        "src": "assets/ssstik.io_@__sofiarico___1777674397815.mp4"
+      },
+      {
+        "title": "Directo escénico",
+        "subtitle": "Presencia · Luz · Interpretación",
+        "src": "assets/ssstik.io_@__sofiarico___1777674450818.mp4"
+      },
+      {
+        "title": "Repertorio pop",
+        "subtitle": "Cover · Emoción · Formato social",
+        "src": "assets/ssstik.io_@__sofiarico___1777674516631.mp4"
+      }
     ],
     "allVideos": [
-      { "title": "Ensayo vocal", "subtitle": "Piano · Voz cercana", "src": "assets/ssstik.io_@__sofiarico___1777674397815.mp4" },
-      { "title": "Directo", "subtitle": "Escena · Interpretación", "src": "assets/ssstik.io_@__sofiarico___1777674450818.mp4" },
-      { "title": "Repertorio", "subtitle": "Cover · Formato social", "src": "assets/ssstik.io_@__sofiarico___1777674516631.mp4" }
+      {
+        "title": "Ensayo vocal",
+        "subtitle": "Piano · Voz cercana",
+        "src": "assets/ssstik.io_@__sofiarico___1777674397815.mp4"
+      },
+      {
+        "title": "Directo",
+        "subtitle": "Escena · Interpretación",
+        "src": "assets/ssstik.io_@__sofiarico___1777674450818.mp4"
+      },
+      {
+        "title": "Repertorio",
+        "subtitle": "Cover · Formato social",
+        "src": "assets/ssstik.io_@__sofiarico___1777674516631.mp4"
+      }
     ],
     "gallery": [
-      { "image": "assets/galeria_1.jpg", "alt": "Retrato artístico de Sofía Rico" },
-      { "image": "assets/galeria_2.jpg", "alt": "Sofía Rico durante una sesión fotográfica" },
-      { "image": "assets/galeria_3.jpg", "alt": "Detalle visual de portfolio musical" },
-      { "image": "assets/galeria_4.jpg", "alt": "Sofía Rico en actuación" },
-      { "image": "assets/galeria_5.jpg", "alt": "Imagen promocional de Sofía Rico" },
-      { "image": "assets/galeria_6.jpg", "alt": "Retrato de cantante para galería" }
+      {
+        "image": "assets/galeria_1.jpg",
+        "alt": "Retrato artístico de Sofía Rico"
+      },
+      {
+        "image": "assets/galeria_2.jpg",
+        "alt": "Sofía Rico durante una sesión fotográfica"
+      },
+      {
+        "image": "assets/galeria_3.jpg",
+        "alt": "Detalle visual de portfolio musical"
+      },
+      {
+        "image": "assets/galeria_4.jpg",
+        "alt": "Sofía Rico en actuación"
+      },
+      {
+        "image": "assets/galeria_5.jpg",
+        "alt": "Imagen promocional de Sofía Rico"
+      },
+      {
+        "image": "assets/galeria_6.jpg",
+        "alt": "Retrato de cantante para galería"
+      }
     ],
     "audios": [
-      { "label": "Muestra 01", "title": "Voz en crudo", "src": "assets/ssstik.io_1777674000631.mp3" },
-      { "label": "Muestra 02", "title": "Sesión acústica", "src": "assets/ssstik.io_1777674034371.mp3" },
-      { "label": "Muestra 03", "title": "Color vocal", "src": "assets/ssstik.io_1777674079389.mp3" }
+      {
+        "label": "Muestra 01",
+        "title": "Voz en crudo",
+        "src": "assets/ssstik.io_1777674000631.mp3"
+      },
+      {
+        "label": "Muestra 02",
+        "title": "Sesión acústica",
+        "src": "assets/ssstik.io_1777674034371.mp3"
+      },
+      {
+        "label": "Muestra 03",
+        "title": "Color vocal",
+        "src": "assets/ssstik.io_1777674079389.mp3"
+      }
     ]
   },
   "videosPage": {
@@ -120,7 +214,11 @@
     }
   },
   "singerPage": {
-    "hero": { "title": "Cantante", "subtitle": "La voz como instrumento del alma", "background": "assets/inicio.jpg" },
+    "hero": {
+      "title": "Cantante",
+      "subtitle": "La voz como instrumento del alma",
+      "background": "assets/inicio.jpg"
+    },
     "history": {
       "kicker": "Mi Historia",
       "title": "Una vida dedicada a la música",
@@ -132,38 +230,112 @@
       ]
     },
     "repertoire": [
-      { "title": "Lírica & Clásica", "text": "Ópera, zarzuela, lied alemán y canción española de concierto" },
-      { "title": "Pop & Contemporáneo", "text": "Baladas, pop español e internacional, música de cine" },
-      { "title": "Jazz & Soul", "text": "Standards de jazz, bossa nova, rhythm and blues" },
-      { "title": "Tradicional", "text": "Copla, folclore español, música latina y boleros" }
+      {
+        "title": "Lírica & Clásica",
+        "text": "Ópera, zarzuela, lied alemán y canción española de concierto"
+      },
+      {
+        "title": "Pop & Contemporáneo",
+        "text": "Baladas, pop español e internacional, música de cine"
+      },
+      {
+        "title": "Jazz & Soul",
+        "text": "Standards de jazz, bossa nova, rhythm and blues"
+      },
+      {
+        "title": "Tradicional",
+        "text": "Copla, folclore español, música latina y boleros"
+      }
     ],
     "timeline": [
-      { "year": "2024", "title": "Gira Nacional \"Voces del Alma\"", "text": "15 ciudades, más de 10.000 espectadores" },
-      { "year": "2023", "title": "Álbum \"Raíces\"", "text": "Primer disco de estudio con canciones originales" },
-      { "year": "2022", "title": "Premio Revelación Musical", "text": "Reconocimiento de la Asociación de Artistas" },
-      { "year": "2020", "title": "Debut en Teatro Principal", "text": "Concierto en solitario con aforo completo" }
+      {
+        "year": "2024",
+        "title": "Gira Nacional \"Voces del Alma\"",
+        "text": "15 ciudades, más de 10.000 espectadores"
+      },
+      {
+        "year": "2023",
+        "title": "Álbum \"Raíces\"",
+        "text": "Primer disco de estudio con canciones originales"
+      },
+      {
+        "year": "2022",
+        "title": "Premio Revelación Musical",
+        "text": "Reconocimiento de la Asociación de Artistas"
+      },
+      {
+        "year": "2020",
+        "title": "Debut en Teatro Principal",
+        "text": "Concierto en solitario con aforo completo"
+      }
     ],
     "venues": [
-      { "title": "Teatro Real", "location": "Madrid", "image": "assets/galeria_1.jpg" },
-      { "title": "Palau de la Música", "location": "Barcelona", "image": "assets/galeria_2.jpg" },
-      { "title": "Festival de Mérida", "location": "Badajoz", "image": "assets/galeria_3.jpg" },
-      { "title": "Auditorio Nacional", "location": "Madrid", "image": "assets/galeria_4.jpg" }
+      {
+        "title": "Teatro Real",
+        "location": "Madrid",
+        "image": "assets/galeria_1.jpg"
+      },
+      {
+        "title": "Palau de la Música",
+        "location": "Barcelona",
+        "image": "assets/galeria_2.jpg"
+      },
+      {
+        "title": "Festival de Mérida",
+        "location": "Badajoz",
+        "image": "assets/galeria_3.jpg"
+      },
+      {
+        "title": "Auditorio Nacional",
+        "location": "Madrid",
+        "image": "assets/galeria_4.jpg"
+      }
     ],
     "collaborations": [
-      { "name": "Sony Music", "logo": "assets/logo_sony.png" },
-      { "name": "RTVE", "logo": "assets/logo_rtve.jfif" },
-      { "name": "Universal", "logo": "assets/logo_universal.jfif" },
-      { "name": "Cadena SER", "logo": "assets/logo_ser.png" },
-      { "name": "Fundación SGAE", "logo": "assets/logo_sgae.jfif" }
+      {
+        "name": "Sony Music",
+        "logo": "assets/logo_sony.png"
+      },
+      {
+        "name": "RTVE",
+        "logo": "assets/logo_rtve.jfif"
+      },
+      {
+        "name": "Universal",
+        "logo": "assets/logo_universal.jfif"
+      },
+      {
+        "name": "Cadena SER",
+        "logo": "assets/logo_ser.png"
+      },
+      {
+        "name": "Fundación SGAE",
+        "logo": "assets/logo_sgae.jfif"
+      }
     ],
     "press": [
-      { "quote": "Una voz que emociona y transporta al oyente a otra dimensión.", "source": "El País" },
-      { "quote": "Versatilidad y técnica impecable se unen en una intérprete con autenticidad.", "source": "ABC Cultural" }
+      {
+        "quote": "Una voz que emociona y transporta al oyente a otra dimensión.",
+        "source": "El País"
+      },
+      {
+        "quote": "Versatilidad y técnica impecable se unen en una intérprete con autenticidad.",
+        "source": "ABC Cultural"
+      }
     ],
-    "cta": { "title": "¿Organizas un evento?", "text": "Hablemos sobre cómo la música puede hacer tu evento inolvidable", "buttonText": "Contactar", "buttonUrl": "index.html#contacto" }
+    "cta": {
+      "title": "¿Organizas un evento?",
+      "text": "Hablemos sobre cómo la música puede hacer tu evento inolvidable",
+      "buttonText": "Contactar",
+      "buttonUrl": "index.html#contacto"
+    }
   },
   "educatorPage": {
-    "hero": { "title": "Educadora Infantil", "subtitle": "Música, cuentos y magia para los más pequeños", "background": "assets/galeria_4.jpg" },
+    "hero": {
+      "title": "Educadora Infantil",
+      "subtitle": "Música, cuentos y magia para los más pequeños",
+      "background": "assets/galeria_4.jpg"
+    },
     "philosophy": {
       "kicker": "Mi Filosofía",
       "title": "La música como puerta a la imaginación",
@@ -178,29 +350,91 @@
       "title": "Una historia que cobra vida con música",
       "bookTitle": "Las Melodías del Bosque Encantado",
       "text": "Un cuento musical original para sesiones educativas donde los niños cantan, se mueven y participan en cada escena.",
-      "features": ["Canciones originales", "Personajes memorables", "Actividades de ritmo", "Expresión corporal"]
+      "features": [
+        "Canciones originales",
+        "Personajes memorables",
+        "Actividades de ritmo",
+        "Expresión corporal"
+      ]
     },
     "methodology": [
-      { "number": "01", "title": "Aprendizaje a través del juego", "text": "El juego es el lenguaje natural de la infancia." },
-      { "number": "02", "title": "Cuentos musicales interactivos", "text": "Historias donde los niños cantan, tocan y dan vida a cada aventura." },
-      { "number": "03", "title": "Expresión corporal", "text": "Danza, movimiento libre y coreografías sencillas para interiorizar ritmos." },
-      { "number": "04", "title": "Creatividad libre", "text": "Momentos para improvisar, crear letras y descubrir su propia voz." }
+      {
+        "number": "01",
+        "title": "Aprendizaje a través del juego",
+        "text": "El juego es el lenguaje natural de la infancia."
+      },
+      {
+        "number": "02",
+        "title": "Cuentos musicales interactivos",
+        "text": "Historias donde los niños cantan, tocan y dan vida a cada aventura."
+      },
+      {
+        "number": "03",
+        "title": "Expresión corporal",
+        "text": "Danza, movimiento libre y coreografías sencillas para interiorizar ritmos."
+      },
+      {
+        "number": "04",
+        "title": "Creatividad libre",
+        "text": "Momentos para improvisar, crear letras y descubrir su propia voz."
+      }
     ],
     "centers": [
-      { "initials": "CC", "name": "CEIP Cervantes", "detail": "Madrid · Desde 2020" },
-      { "initials": "EI", "name": "Escuela Infantil Arcoíris", "detail": "Madrid · Desde 2019" },
-      { "initials": "BM", "name": "Biblioteca Municipal", "detail": "Getafe · Desde 2021" },
-      { "initials": "CL", "name": "Centro Cultural La Corrala", "detail": "Madrid · Desde 2022" }
+      {
+        "initials": "CC",
+        "name": "CEIP Cervantes",
+        "detail": "Madrid · Desde 2020"
+      },
+      {
+        "initials": "EI",
+        "name": "Escuela Infantil Arcoíris",
+        "detail": "Madrid · Desde 2019"
+      },
+      {
+        "initials": "BM",
+        "name": "Biblioteca Municipal",
+        "detail": "Getafe · Desde 2021"
+      },
+      {
+        "initials": "CL",
+        "name": "Centro Cultural La Corrala",
+        "detail": "Madrid · Desde 2022"
+      }
     ],
     "testimonials": [
-      { "text": "Sofía tiene un don especial para conectar con los niños.", "author": "María García", "role": "Madre de Lucía, 5 años" },
-      { "text": "Los niños estuvieron participando todo el tiempo.", "author": "Carlos Ruiz", "role": "Padre de Pablo, 4 años" },
-      { "text": "Destaca por su profesionalidad y por cómo adapta cada sesión al grupo.", "author": "Elena Martínez", "role": "Directora, E.I. Arcoíris" }
+      {
+        "text": "Sofía tiene un don especial para conectar con los niños.",
+        "author": "María García",
+        "role": "Madre de Lucía, 5 años"
+      },
+      {
+        "text": "Los niños estuvieron participando todo el tiempo.",
+        "author": "Carlos Ruiz",
+        "role": "Padre de Pablo, 4 años"
+      },
+      {
+        "text": "Destaca por su profesionalidad y por cómo adapta cada sesión al grupo.",
+        "author": "Elena Martínez",
+        "role": "Directora, E.I. Arcoíris"
+      }
     ],
     "training": [
-      { "year": "2022", "title": "Máster en Musicoterapia Infantil", "text": "Universidad Complutense de Madrid" },
-      { "year": "2020", "title": "Especialización Método Dalcroze", "text": "Institut Jaques-Dalcroze, Ginebra" }
+      {
+        "year": "2022",
+        "title": "Máster en Musicoterapia Infantil",
+        "text": "Universidad Complutense de Madrid"
+      },
+      {
+        "year": "2020",
+        "title": "Especialización Método Dalcroze",
+        "text": "Institut Jaques-Dalcroze, Ginebra"
+      }
     ],
-    "cta": { "title": "¿Quieres llevar la música a tu centro o evento?", "text": "Estoy disponible para talleres en escuelas, fiestas y eventos familiares.", "buttonText": "Solicitar presupuesto", "buttonUrl": "index.html#contacto" }
+    "cta": {
+      "title": "¿Quieres llevar la música a tu centro o evento?",
+      "text": "Estoy disponible para talleres en escuelas, fiestas y eventos familiares.",
+      "buttonText": "Solicitar presupuesto",
+      "buttonUrl": "index.html#contacto"
+    }
   }
 }
