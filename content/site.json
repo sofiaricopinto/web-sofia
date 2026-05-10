@@ -49,12 +49,12 @@
           "label": "Años de experiencia"
         },
         {
-          "number": "200+",
-          "label": "Conciertos"
-        },
-        {
           "number": "50+",
           "label": "Colaboraciones"
+        },
+        {
+          "number": "20+",
+          "label": "Conciertos"
         }
       ],
       "buttonText": "Descubrir más sobre mi música",
