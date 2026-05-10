@@ -2,6 +2,7 @@
     if (window.SofiaCMS) {
         try {
             await window.SofiaCMS.renderVideos();
+            window.SofiaCMS.setupNav();
         } catch (error) {
             console.warn("Contenido CMS no disponible, usando HTML de respaldo.", error);
         }

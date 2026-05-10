@@ -160,6 +160,32 @@
         });
     }
 
+    function setupNav() {
+        const nav = qs(".site-nav");
+        const menuToggle = qs(".menu-toggle");
+        const navLinks = qs(".nav-links");
+
+        const setNavState = () => {
+            nav?.classList.toggle("is-scrolled", window.scrollY > 30);
+        };
+
+        window.addEventListener("scroll", setNavState, { passive: true });
+        setNavState();
+
+        menuToggle?.addEventListener("click", () => {
+            if (!navLinks) return;
+            const isOpen = navLinks.classList.toggle("is-open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        navLinks?.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("is-open");
+                menuToggle?.setAttribute("aria-expanded", "false");
+            });
+        });
+    }
+
     function renderHome(data) {
         const home = data.home;
         if (!home) return;
@@ -342,6 +368,7 @@
         renderHome: async () => renderHome(await load()),
         renderVideos: async () => renderVideos(await load()),
         renderSinger: async () => renderSinger(await load()),
-        renderEducator: async () => renderEducator(await load())
+        renderEducator: async () => renderEducator(await load()),
+        setupNav
     };
 }());

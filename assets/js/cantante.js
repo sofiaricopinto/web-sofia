@@ -2,6 +2,7 @@
     if (window.SofiaCMS) {
         try {
             await window.SofiaCMS.renderSinger();
+            window.SofiaCMS.setupNav();
         } catch (error) {
             console.warn("Contenido CMS no disponible, usando HTML de respaldo.", error);
         }
@@ -15,6 +16,8 @@
         ".timeline-item",
         ".venues-intro > *",
         ".venue-card",
+        ".experiences-intro > *",
+        ".story-card",
         ".colab-item",
         ".prensa-item",
         ".cta-section > *"
