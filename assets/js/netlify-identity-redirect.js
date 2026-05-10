@@ -17,10 +17,6 @@
     });
 
     window.netlifyIdentity.on("login", () => {
-        if (isAdmin) {
-            window.location.reload();
-            return;
-        }
-        window.location.href = "/admin/";
+        if (!isAdmin) window.location.href = "/admin/";
     });
 }());
