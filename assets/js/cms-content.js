@@ -83,40 +83,81 @@
         `;
     }
 
+    const storyPayload = (item) => esc(encodeURIComponent(JSON.stringify(item)));
+
+    function storyMeta(item) {
+        return [item.date, item.place || item.type].filter(Boolean).join(" · ");
+    }
+
     function experienceCard(item) {
         return `
-            <details class="experience-card reveal">
-                <summary>
-                    <span class="experience-media"><img src="${esc(item.image)}" alt="${esc(item.title)}"></span>
-                    <span class="experience-copy">
-                        <span class="experience-date">${esc(item.date || item.type || "")}</span>
-                        <strong>${esc(item.title)}</strong>
-                        <em>${esc(item.place || item.summary || "")}</em>
-                        <span>${esc(item.excerpt || item.summary || "")}</span>
-                    </span>
-                </summary>
-                <div class="experience-body">
-                    <p>${esc(item.body)}</p>
-                </div>
-            </details>
+            <button class="story-card experience-card reveal" type="button" data-story="${storyPayload(item)}">
+                <span class="story-media"><img src="${esc(item.image)}" alt="${esc(item.title)}"></span>
+                <span class="story-copy">
+                    <span class="story-date">${esc(storyMeta(item))}</span>
+                    <strong>${esc(item.title)}</strong>
+                    <em>${esc(item.excerpt || item.summary || "")}</em>
+                    <span class="story-cta">Leer experiencia</span>
+                </span>
+            </button>
         `;
     }
 
     function creationCard(item, index) {
         return `
-            <article class="creation-card reveal" style="--i:${index + 1}">
-                <img src="${esc(item.image)}" alt="${esc(item.title)}">
-                <div>
-                    <span>${esc(item.type)}</span>
+            <button class="story-card creation-card reveal" type="button" data-story="${storyPayload(item)}" style="--i:${index + 1}">
+                <span class="story-media"><img src="${esc(item.image)}" alt="${esc(item.title)}"></span>
+                <span class="story-copy">
+                    <span class="story-date">${esc(item.type)}</span>
                     <h3>${esc(item.title)}</h3>
-                    <p>${esc(item.summary)}</p>
-                    <details>
-                        <summary>Leer más</summary>
-                        <p>${esc(item.body)}</p>
-                    </details>
-                </div>
-            </article>
+                    <em>${esc(item.summary)}</em>
+                    <span class="story-cta">Abrir creación</span>
+                </span>
+            </button>
         `;
+    }
+
+    function ensureStoryModal() {
+        let modal = qs(".story-modal");
+        if (modal) return modal;
+        document.body.insertAdjacentHTML("beforeend", `
+            <dialog class="story-modal" aria-label="Detalle">
+                <button class="story-modal-close" type="button" aria-label="Cerrar">×</button>
+                <div class="story-modal-grid">
+                    <div class="story-modal-image"><img src="" alt=""></div>
+                    <article class="story-modal-copy">
+                        <span></span>
+                        <h2></h2>
+                        <p class="story-modal-summary"></p>
+                        <p class="story-modal-body"></p>
+                    </article>
+                </div>
+            </dialog>
+        `);
+        modal = qs(".story-modal");
+        modal.addEventListener("click", (event) => {
+            if (event.target === modal || event.target.closest(".story-modal-close")) modal.close();
+        });
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && modal.open) modal.close();
+        });
+        return modal;
+    }
+
+    function setupStoryModal() {
+        const modal = ensureStoryModal();
+        qsa("[data-story]").forEach((card) => {
+            card.addEventListener("click", () => {
+                const item = JSON.parse(decodeURIComponent(card.dataset.story));
+                attr(".story-modal-image img", "src", item.image, modal);
+                attr(".story-modal-image img", "alt", item.title, modal);
+                text(".story-modal-copy span", storyMeta(item), modal);
+                text(".story-modal-copy h2", item.title, modal);
+                text(".story-modal-summary", item.excerpt || item.summary || "", modal);
+                text(".story-modal-body", item.body || "", modal);
+                modal.showModal();
+            });
+        });
     }
 
     function renderHome(data) {
@@ -234,6 +275,7 @@
             text(".experiences-intro h2", page.experiences.title);
             text(".experiences-intro p", page.experiences.intro);
             html(".experiences-grid", (page.experiences.items || []).map(experienceCard).join(""));
+            setupStoryModal();
         }
         html(".colabs-grid", (page.collaborations || []).map((item) => `<div class="colab-item"><img src="${esc(item.logo)}" alt="${esc(item.name)}"></div>`).join(""));
         html(".prensa-grid", (page.press || []).map((item) => `<div class="prensa-item"><p class="prensa-quote">"${esc(item.quote)}"</p><span class="prensa-source">${esc(item.source)}</span></div>`).join(""));
@@ -268,12 +310,14 @@
             text(".creations-intro h2", page.creations.title);
             text(".creations-intro p", page.creations.intro);
             html(".creations-grid", (page.creations.items || []).map(creationCard).join(""));
+            setupStoryModal();
         }
         if (page.experiences) {
             text(".experiences-section .section-title", page.experiences.kicker);
             text(".experiences-intro h2", page.experiences.title);
             text(".experiences-intro p", page.experiences.intro);
             html(".experiences-grid", (page.experiences.items || []).map(experienceCard).join(""));
+            setupStoryModal();
         }
         html(".centros-grid", (page.centers || []).map((item) => `
             <div class="centro-card"><div class="centro-icon">${esc(item.initials)}</div><h3>${esc(item.name)}</h3><span>${esc(item.detail)}</span></div>
