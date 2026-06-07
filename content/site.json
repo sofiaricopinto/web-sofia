@@ -127,6 +127,18 @@
         "orientation": "portrait"
       },
       {
+        "title": "Hablaran de ti y de mi",
+        "subtitle": "UAM - Congreso de educacion - 2025",
+        "src": "assets/Congreso_UAM_educacion/hablaran_de_ti_y_de_mi.mp4",
+        "orientation": "portrait"
+      },
+      {
+        "title": "What a Wonderful World",
+        "subtitle": "UAM - Congreso de educacion - 2025",
+        "src": "assets/Congreso_UAM_educacion/What_a_wonderful_world.mp4",
+        "orientation": "portrait"
+      },
+      {
         "title": "Ensayo vocal",
         "subtitle": "Piano - Voz cercana",
         "src": "assets/ssstik.io_@__sofiarico___1777674397815.mp4",
@@ -175,6 +187,11 @@
         "alt": "Sofia Rico y Jesus Marcos durante el concierto"
       },
       {
+        "image": "assets/Congreso_UAM_educacion/vertical_cantando.jpeg",
+        "alt": "Sofia Rico interpretando en el XIX Congreso Nacional de Educacion Comparada de la UAM",
+        "orientation": "portrait"
+      },
+      {
         "image": "assets/galeria_4.jpg",
         "alt": "Sofia Rico en actuacion"
       },
@@ -201,6 +218,11 @@
       {
         "image": "assets/galeria_5.jpg",
         "alt": "Imagen promocional de Sofia Rico"
+      },
+      {
+        "image": "assets/Congreso_UAM_educacion/vertical_cantando2.jpeg",
+        "alt": "Actuacion vocal de Sofia Rico durante el Congreso de Educacion Comparada en la UAM",
+        "orientation": "portrait"
       },
       {
         "image": "assets/Concierto_candel3cantos/horizontal_bailando_guitarra2.jpg",
@@ -366,6 +388,11 @@
         "text": "jshihsfudhjfiwe"
       },
       {
+        "year": "2025",
+        "title": "XIX Congreso Nacional de Educacion Comparada - UAM",
+        "text": "Intervencion musical en el XIX Congreso Nacional de Educacion Comparada, celebrado en la Universidad Autonoma de Madrid bajo el lema Educacion Glocal y nuevos espacios de formacion."
+      },
+      {
         "year": "2024",
         "title": "Gira Nacional \"Voces del Alma\"",
         "text": "15 ciudades, más de 10.000 espectadores"
@@ -427,6 +454,14 @@
           "body": "La actuacion formo parte de la programacion de Las Noches en La Rosaleda, una propuesta gratuita en el Parque Central de Tres Cantos. Sofia Rico compartio escenario con Jesus Marcos en una noche pensada para unir musica en directo, cercania y una puesta en escena marcada por la luz calida de las velas."
         },
         {
+          "title": "Intervencion musical en el Congreso de Educacion de la UAM",
+          "place": "Universidad Autonoma de Madrid",
+          "date": "Noviembre de 2025",
+          "image": "assets/Congreso_UAM_educacion/vertical_cantando.jpeg",
+          "excerpt": "Una actuacion en un contexto academico y educativo, dentro del XIX Congreso Nacional de Educacion Comparada.",
+          "body": "La intervencion formo parte de un encuentro nacional dedicado a la Educacion Glocal y a los nuevos espacios de formacion. Fue una experiencia especialmente bonita por el marco universitario, la escucha del publico y la posibilidad de llevar la voz a un congreso donde la educacion, la cultura y la sensibilidad artistica convivian en el mismo espacio."
+        },
+        {
           "title": "Concierto acústico de invierno",
           "place": "Sala íntima · Madrid",
           "date": "2025",
@@ -476,6 +511,10 @@
       {
         "name": "Ayuntamiento de Tres Cantos",
         "logo": "assets/ayuntamiento_3cantos_logo.png"
+      },
+      {
+        "name": "Universidad Autonoma de Madrid",
+        "logo": "assets/logo_UAM.png"
       }
     ],
     "press": [
@@ -577,6 +616,14 @@
       "title": "Sesiones que dejan recuerdo",
       "intro": "Momentos reales de aula, cuento y escenario contados como pequeñas crónicas editables.",
       "items": [
+        {
+          "title": "Intervencion musical en el Congreso de Educacion de la UAM",
+          "place": "Universidad Autonoma de Madrid",
+          "date": "Noviembre de 2025",
+          "image": "assets/Congreso_UAM_educacion/vertical_cantando.jpeg",
+          "excerpt": "Una intervencion vocal en un congreso universitario sobre educacion, formacion y nuevos espacios de aprendizaje.",
+          "body": "Participar en el Congreso de Educacion Comparada de la UAM permitio unir la parte artistica y la educativa en un entorno academico. La actuacion aporto un momento de sensibilidad y presencia escenica dentro de unas jornadas centradas en la reflexion sobre educacion, espacios formativos e investigacion."
+        },
         {
           "title": "Cuento musical en biblioteca",
           "place": "Biblioteca municipal",
