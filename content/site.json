@@ -3,21 +3,21 @@
     "title": "Sofía Rico | Cantante y artista vocal",
     "description": "Portfolio profesional de Sofía Rico, cantante, artista vocal y educadora musical.",
     "brand": "Sofía Rico",
-    "email": "tu@email.com",
+    "email": "soysofiaricopinto@gmail.com",
     "copyright": "© 2026 Sofía Rico. Todos los derechos reservados.",
     "footerText": "Portfolio vocal y dirección artística web.",
     "socials": [
       {
         "name": "Instagram",
-        "url": "#"
+        "url": "https://www.instagram.com/soysofiarico_/"
       },
       {
         "name": "TikTok",
-        "url": "#"
+        "url": "https://www.tiktok.com/@__sofiarico__"
       },
       {
         "name": "YouTube",
-        "url": "#"
+        "url": "https://www.youtube.com/watch?v=BObFhMq9zWA&list=RDBObFhMq9zWA&start_radio=1"
       }
     ]
   },
@@ -89,77 +89,209 @@
   "media": {
     "featuredVideos": [
       {
-        "title": "Ensayo vocal",
-        "subtitle": "Voz cercana · Piano · Trabajo real",
-        "src": "assets/ssstik.io_@__sofiarico___1777674397815.mp4"
+        "title": "Purple Rain",
+        "subtitle": "Directo - Tres Cantos - 1 min",
+        "src": "assets/Concierto_candel3cantos/video_purple_rain_000_100.mp4",
+        "orientation": "landscape"
       },
       {
-        "title": "Directo escénico",
-        "subtitle": "Presencia · Luz · Interpretación",
-        "src": "assets/ssstik.io_@__sofiarico___1777674450818.mp4"
+        "title": "El sitio de mi recreo",
+        "subtitle": "Directo - Version completa",
+        "src": "assets/Concierto_candel3cantos/video_el_sitio_de_mi_recreo_entera.mp4",
+        "orientation": "landscape"
       },
       {
-        "title": "Repertorio pop",
-        "subtitle": "Cover · Emoción · Formato social",
-        "src": "assets/ssstik.io_@__sofiarico___1777674516631.mp4"
+        "title": "Peces de ciudad",
+        "subtitle": "Directo - Extracto vocal",
+        "src": "assets/Concierto_candel3cantos/video_peces_de_ciudad_425_532.mp4",
+        "orientation": "portrait"
       }
     ],
     "allVideos": [
       {
+        "title": "Purple Rain",
+        "subtitle": "Directo - Tres Cantos - 1 min",
+        "src": "assets/Concierto_candel3cantos/video_purple_rain_000_100.mp4",
+        "orientation": "landscape"
+      },
+      {
+        "title": "El sitio de mi recreo",
+        "subtitle": "Directo - Version completa",
+        "src": "assets/Concierto_candel3cantos/video_el_sitio_de_mi_recreo_entera.mp4",
+        "orientation": "landscape"
+      },
+      {
+        "title": "Peces de ciudad",
+        "subtitle": "Directo - Extracto vocal",
+        "src": "assets/Concierto_candel3cantos/video_peces_de_ciudad_425_532.mp4",
+        "orientation": "portrait"
+      },
+      {
         "title": "Ensayo vocal",
-        "subtitle": "Piano · Voz cercana",
-        "src": "assets/ssstik.io_@__sofiarico___1777674397815.mp4"
+        "subtitle": "Piano - Voz cercana",
+        "src": "assets/ssstik.io_@__sofiarico___1777674397815.mp4",
+        "orientation": "portrait"
       },
       {
         "title": "Directo",
-        "subtitle": "Escena · Interpretación",
-        "src": "assets/ssstik.io_@__sofiarico___1777674450818.mp4"
+        "subtitle": "Escena - Interpretacion",
+        "src": "assets/ssstik.io_@__sofiarico___1777674450818.mp4",
+        "orientation": "portrait"
       },
       {
         "title": "Repertorio",
-        "subtitle": "Cover · Formato social",
-        "src": "assets/ssstik.io_@__sofiarico___1777674516631.mp4"
+        "subtitle": "Cover - Formato social",
+        "src": "assets/ssstik.io_@__sofiarico___1777674516631.mp4",
+        "orientation": "portrait"
       }
     ],
     "gallery": [
       {
+        "image": "assets/Concierto_candel3cantos/horizonal_atras_publico.jpg",
+        "alt": "Vista del publico y el escenario en La Rosaleda de Tres Cantos"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_zoom.jpg",
+        "alt": "Sofia Rico cantando en Las Noches en La Rosaleda de Tres Cantos"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_velas.jpg",
+        "alt": "Concierto de Sofia Rico con iluminacion de velas"
+      },
+      {
         "image": "assets/galeria_1.jpg",
-        "alt": "Retrato artístico de Sofía Rico"
+        "alt": "Retrato artistico de Sofia Rico"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_bailando_guitarra.jpg",
+        "alt": "Momento musical con guitarra durante el concierto Candlelight"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_publico.jpg",
+        "alt": "Sofia Rico actuando ante el publico en Tres Cantos"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_equipo.jpg",
+        "alt": "Sofia Rico y Jesus Marcos durante el concierto"
+      },
+      {
+        "image": "assets/galeria_4.jpg",
+        "alt": "Sofia Rico en actuacion"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_publico2.jpg",
+        "alt": "Actuacion de Sofia Rico con publico en formato al aire libre"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_lugar_evento.jpg",
+        "alt": "La Rosaleda del Parque Central de Tres Cantos preparada para el concierto"
       },
       {
         "image": "assets/galeria_2.jpg",
-        "alt": "Sofía Rico durante una sesión fotográfica"
+        "alt": "Sofia Rico durante una sesion fotografica"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_zoom2.jpg",
+        "alt": "Plano cercano de Sofia Rico interpretando en directo"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_velas2.jpg",
+        "alt": "Sofia Rico cantando bajo la iluminacion artistica de velas"
+      },
+      {
+        "image": "assets/galeria_5.jpg",
+        "alt": "Imagen promocional de Sofia Rico"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_bailando_guitarra2.jpg",
+        "alt": "Guitarra y movimiento escenico en el concierto de Tres Cantos"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_equipo2.jpg",
+        "alt": "Duo musical en Las Noches en La Rosaleda"
       },
       {
         "image": "assets/galeria_3.jpg",
         "alt": "Detalle visual de portfolio musical"
       },
       {
-        "image": "assets/galeria_4.jpg",
-        "alt": "Sofía Rico en actuación"
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_publico3.jpg",
+        "alt": "Sofia Rico interpretando frente al publico"
       },
       {
-        "image": "assets/galeria_5.jpg",
-        "alt": "Imagen promocional de Sofía Rico"
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando_velas3.jpg",
+        "alt": "Escena del concierto Candlelight con velas"
       },
       {
         "image": "assets/galeria_6.jpg",
-        "alt": "Retrato de cantante para galería"
+        "alt": "Retrato de cantante para galeria"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando.jpg",
+        "alt": "Sofia Rico cantando en directo"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_lugar_evento2.jpg",
+        "alt": "Espacio de La Rosaleda durante la actividad musical"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando2.jpg",
+        "alt": "Interpretacion vocal de Sofia Rico en Tres Cantos"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_zoom_cantando_bajailuminacion.jpg",
+        "alt": "Primer plano de Sofia Rico cantando con baja iluminacion"
+      },
+      {
+        "image": "assets/Concierto_candel3cantos/horizontal_cantando3.jpg",
+        "alt": "Sofia Rico en concierto al aire libre"
       }
     ],
     "audios": [
       {
         "label": "Muestra 01",
+        "title": "Peces de ciudad",
+        "src": "assets/Concierto_candel3cantos/audio_peces_de_ciudad_extracto.mp3"
+      },
+      {
+        "label": "Muestra 02",
+        "title": "Purple Rain",
+        "src": "assets/Concierto_candel3cantos/audio_purple_rain_extracto.mp3"
+      },
+      {
+        "label": "Muestra 03",
+        "title": "El sitio de mi recreo",
+        "src": "assets/Concierto_candel3cantos/audio_el_sitio_de_mi_recreo_extracto.mp3"
+      }
+    ],
+    "galleryAudios": [
+      {
+        "label": "Muestra 01",
+        "title": "Peces de ciudad",
+        "src": "assets/Concierto_candel3cantos/audio_peces_de_ciudad_extracto.mp3"
+      },
+      {
+        "label": "Muestra 02",
+        "title": "Purple Rain",
+        "src": "assets/Concierto_candel3cantos/audio_purple_rain_extracto.mp3"
+      },
+      {
+        "label": "Muestra 03",
+        "title": "El sitio de mi recreo",
+        "src": "assets/Concierto_candel3cantos/audio_el_sitio_de_mi_recreo_extracto.mp3"
+      },
+      {
+        "label": "Archivo 01",
         "title": "Voz en crudo",
         "src": "assets/ssstik.io_1777674000631.mp3"
       },
       {
-        "label": "Muestra 02",
-        "title": "Sesión acústica",
+        "label": "Archivo 02",
+        "title": "Sesion acustica",
         "src": "assets/ssstik.io_1777674034371.mp3"
       },
       {
-        "label": "Muestra 03",
+        "label": "Archivo 03",
         "title": "Color vocal",
         "src": "assets/ssstik.io_1777674079389.mp3"
       }
@@ -167,10 +299,10 @@
   },
   "videosPage": {
     "hero": {
-      "kicker": "Galería audiovisual",
-      "title": "Videos",
-      "text": "Una selección de piezas, retratos y momentos de directo para ver el color de la voz, la presencia en escena y la estética visual de Sofía.",
-      "background": "assets/galeria_2.jpg"
+      "kicker": "Galeria audiovisual",
+      "title": "Galeria audiovisual",
+      "text": "Fotos, videos y momentos de directo reunidos como portfolio visual de Sofia Rico.",
+      "background": "assets/Concierto_candel3cantos/horizonal_atras_publico.jpg"
     },
     "videosHeader": {
       "kicker": "En directo",
@@ -179,13 +311,13 @@
     },
     "galleryHeader": {
       "kicker": "Imagen artística",
-      "title": "Retratos y escena.",
-      "text": "Fotografías para prensa, cartel, redes y dossier profesional."
+      "title": "Galeria audiovisual.",
+      "text": "Una seleccion de retratos, escena y concierto para dossier, prensa y promocion artistica."
     },
     "audioHeader": {
       "kicker": "Audio",
       "title": "Muestras de voz.",
-      "text": "Tomas breves para valorar timbre, intención y textura vocal."
+      "text": "Tomas breves para valorar timbre, intencion y textura vocal, con extractos nuevos y archivo anterior."
     }
   },
   "singerPage": {
@@ -224,6 +356,11 @@
     ],
     "timeline": [
       {
+        "year": "2026",
+        "title": "Las Noches en La Rosaleda - Tres Cantos",
+        "text": "Concierto de Sofia Rico junto a Jesus Marcos dentro del formato Candlelight de las 2.000 velas, celebrado el 6 de junio de 2026 en La Rosaleda del Parque Central de Tres Cantos."
+      },
+      {
         "year": "2025",
         "title": "Teatro Real",
         "text": "jshihsfudhjfiwe"
@@ -251,6 +388,11 @@
     ],
     "venues": [
       {
+        "title": "La Rosaleda del Parque Central",
+        "location": "Tres Cantos - Las Noches en La Rosaleda",
+        "image": "assets/Concierto_candel3cantos/horizontal_lugar_evento.jpg"
+      },
+      {
         "title": "Teatro Real",
         "location": "Madrid",
         "image": "assets/galeria_1.jpg"
@@ -276,6 +418,14 @@
       "title": "Actuaciones con historia propia",
       "intro": "Una selección de momentos escénicos contados con contexto: qué se preparó, cómo fue el espacio y qué quedó de cada actuación.",
       "items": [
+        {
+          "title": "Concierto Candlelight entre 2.000 velas",
+          "place": "La Rosaleda - Tres Cantos",
+          "date": "6 de junio de 2026",
+          "image": "assets/Concierto_candel3cantos/horizontal_cantando_velas.jpg",
+          "excerpt": "Un concierto nocturno al aire libre junto a Jesus Marcos, enmarcado en Las Noches en La Rosaleda y la iluminacion artistica de 2.000 velas.",
+          "body": "La actuacion formo parte de la programacion de Las Noches en La Rosaleda, una propuesta gratuita en el Parque Central de Tres Cantos. Sofia Rico compartio escenario con Jesus Marcos en una noche pensada para unir musica en directo, cercania y una puesta en escena marcada por la luz calida de las velas."
+        },
         {
           "title": "Concierto acústico de invierno",
           "place": "Sala íntima · Madrid",
@@ -322,6 +472,10 @@
       {
         "name": "Fundación SGAE",
         "logo": "assets/logo_sgae.jfif"
+      },
+      {
+        "name": "Ayuntamiento de Tres Cantos",
+        "logo": "assets/ayuntamiento_3cantos_logo.png"
       }
     ],
     "press": [

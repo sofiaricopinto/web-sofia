@@ -32,7 +32,10 @@
 
     const setBackground = (selector, image) => {
         const el = qs(selector);
-        if (el && image) el.style.backgroundImage = `url("${image}")`;
+        if (el && image) {
+            el.style.backgroundImage = `url("${image}")`;
+            el.style.setProperty("--hero-image", `url("${image}")`);
+        }
     };
 
     async function load() {
@@ -55,10 +58,20 @@
         });
     }
 
+    function videoOrientation(item) {
+        const src = item.src || "";
+        if (item.orientation) return item.orientation;
+        if (/peces|vertical|ssstik/i.test(src)) return "portrait";
+        return "landscape";
+    }
+
     function videoCard(item, className = "reel reveal", loadType = "") {
         const dataAttr = loadType ? ` data-load-item="${loadType}"` : "";
+        const orientationClass = className.includes("video-card")
+            ? `video-card-${videoOrientation(item)}`
+            : `reel-${videoOrientation(item)}`;
         return `
-            <article class="${className}" tabindex="0" aria-label="Video: ${esc(item.title)}"${dataAttr}>
+            <article class="${className} ${orientationClass}" tabindex="0" aria-label="Video: ${esc(item.title)}"${dataAttr}>
                 <video muted loop playsinline preload="metadata">
                     <source src="${esc(item.src)}" type="video/mp4">
                 </video>
@@ -101,6 +114,13 @@
                 </span>
             </button>
         `;
+    }
+
+    function imageOrientation(item) {
+        const image = item.image || "";
+        if (item.orientation) return item.orientation;
+        if (/horizontal|horizonal|inicio|about_me/i.test(image)) return "landscape";
+        return "portrait";
     }
 
     function creationCard(item, index) {
@@ -219,7 +239,7 @@
 
         text("#galeria .section-kicker", home.galleryIntro.kicker);
         text("#galeria .section-heading", home.galleryIntro.title);
-        html("#galeria .gallery", (data.media.gallery || []).slice(0, 6).map((item) => `<figure class="reveal"><img src="${esc(item.image)}" alt="${esc(item.alt)}"></figure>`).join(""));
+        html("#galeria .gallery", (data.media.gallery || []).slice(0, 6).map((item) => `<figure class="reveal"><img src="${esc(item.image)}" alt="${esc(item.alt)}" loading="lazy"></figure>`).join(""));
         const galleryMore = qs("#galeria .video-more a");
         if (galleryMore) galleryMore.innerHTML = `${esc(home.galleryIntro.moreText)} <span aria-hidden="true">→</span>`;
 
@@ -267,13 +287,14 @@
         text("#galeria .section-kicker", page.galleryHeader.kicker);
         text("#galeria .section-title", page.galleryHeader.title);
         text("#galeria .section-copy", page.galleryHeader.text);
-        html("#galeria .gallery-grid", (data.media.gallery || []).map((item) => `<figure class="reveal" data-load-item="gallery"><img src="${esc(item.image)}" alt="${esc(item.alt)}"></figure>`).join(""));
+        html("#galeria .gallery-grid", (data.media.gallery || []).map((item, index) => `<figure class="reveal gallery-item-${esc(imageOrientation(item))}${index >= 6 ? " is-hidden" : ""}" data-load-item="gallery"><img src="${esc(item.image)}" alt="${esc(item.alt)}" loading="lazy"></figure>`).join(""));
         const audioSection = qsa("main > .section")[2];
         if (audioSection) {
+            const galleryAudios = data.media.galleryAudios || data.media.audios || [];
             text(".section-kicker", page.audioHeader.kicker, audioSection);
             text(".section-title", page.audioHeader.title, audioSection);
             text(".section-copy", page.audioHeader.text, audioSection);
-            html(".audio-grid", (data.media.audios || []).map(audioCard).join(""), audioSection);
+            html(".audio-grid", galleryAudios.map(audioCard).join(""), audioSection);
         }
     }
 

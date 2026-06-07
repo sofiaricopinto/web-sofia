@@ -475,13 +475,15 @@
 
         .reels-grid {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(6, minmax(0, 1fr));
             gap: clamp(0.85rem, 1.6vw, 1.15rem);
             align-items: stretch;
+            grid-auto-flow: dense;
         }
 
         .reel {
             position: relative;
+            grid-column: span 2;
             aspect-ratio: 9 / 16;
             min-height: 0;
             overflow: hidden;
@@ -489,6 +491,20 @@
             background: #111;
             cursor: pointer;
             isolation: isolate;
+        }
+
+        .reel-landscape {
+            grid-column: span 3;
+            aspect-ratio: 16 / 9;
+        }
+
+        .reel-portrait {
+            grid-column: span 2;
+            aspect-ratio: 9 / 16;
+        }
+
+        .reels-grid .reel-portrait:nth-child(3) {
+            grid-column: 3 / span 2;
         }
 
         .reel.is-playing .reel-meta {
@@ -875,7 +891,14 @@
                 grid-template-columns: 1fr;
             }
 
-            .reel, .reel:nth-child(2), .reel:nth-child(3) { min-height: 0; }
+            .reel,
+            .reel-landscape,
+            .reel-portrait,
+            .reel:nth-child(2),
+            .reel:nth-child(3) {
+                grid-column: 1;
+                min-height: 0;
+            }
 
             .gallery figure,
             .gallery figure:nth-child(1),
