@@ -40,21 +40,13 @@
       "title": "Una voz que conecta con el alma.",
       "image": "assets/galeria_1.jpg",
       "paragraphs": [
-        "Con más de una década de experiencia en el escenario, mi pasión por la música me ha llevado a explorar diversos géneros y estilos, siempre buscando transmitir emociones auténticas a través de cada nota.",
-        "Mi formación clásica combinada con influencias contemporáneas crea un estilo único que resuena con audiencias de todas las edades. Cada actuación es una oportunidad para crear momentos inolvidables."
+        "Me subí a un escenario por primera vez con apenas dos años y, desde entonces, nunca he dejado de cantar. Un día escuché a la gran Concha Velasco decir “Mamá, quiero ser artista” y aquellas palabras se convirtieron, sin saberlo, en mi lema de vida. Desde entonces, los escenarios han sido mucho más que un lugar donde cantar: son el lugar donde me siento verdaderamente yo. No concibo mi vida sin la música, sin las luces, sin ese instante previo a salir al escenario y, sobre todo, sin la conexión que se crea cuando una canción comienza a emocionar a quien la escucha.",
+        "Si hay algo que me define como artista es precisamente la emoción. Vivo por y para las personas que están al otro lado, porque creo que la música solo cobra sentido cuando consigue llegar al corazón. Por eso, cada actuación es para mí una oportunidad de contar una historia, despertar un recuerdo o hacer sentir algo que permanezca. Ya sea en un gran escenario, en una boda, en un evento o en un formato más íntimo, mi propósito es siempre el mismo: hacer de cada canción un momento que merezca la pena recordar."
       ],
       "stats": [
         {
-          "number": "10+",
+          "number": "15+",
           "label": "Años de experiencia"
-        },
-        {
-          "number": "50+",
-          "label": "Colaboraciones"
-        },
-        {
-          "number": "20+",
-          "label": "Conciertos"
         }
       ],
       "buttonText": "Descubrir más sobre mi música",
@@ -530,7 +522,7 @@
     ],
     "hero": {
       "title": "Cantante",
-      "subtitle": "La voz como instrumento del alma",
+      "subtitle": "La voz para contar historias",
       "background": "assets/inicio.jpg"
     }
   },
