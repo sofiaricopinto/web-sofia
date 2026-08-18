@@ -25,15 +25,15 @@
     "hero": {
       "title": "Sofía Rico",
       "subtitle": "Cantante · Artista · Educadora",
-      "background": "assets/inicio.jpg"
+      "background": "/assets/uploads/chatgpt-image-18-ago-2026-12_04_10.png"
     },
     "marquee": [
-      "Pop elegante",
-      "Bolero",
-      "Jazz íntimo",
-      "Eventos privados",
-      "Sesión acústica",
-      "Teatro musical"
+      "Emoción",
+      "Versatilidad",
+      "Elegancia",
+      "Personalización",
+      "Cercanía",
+      "Directo"
     ],
     "voice": {
       "kicker": "La voz",
