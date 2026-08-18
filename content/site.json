@@ -1,11 +1,11 @@
 {
   "site": {
     "title": "Sofía Rico | Cantante y artista vocal",
-    "description": "Portfolio profesional de Sofía Rico, cantante, artista vocal y educadora musical.",
+    "description": "Portfolio profesional de Sofía Rico, cantante y educadora",
     "brand": "Sofía Rico",
-    "email": "soysofiarico@gmail.com",
+    "email": "soy@sofiaricopinto.com",
     "copyright": "© 2026 Sofía Rico. Todos los derechos reservados.",
-    "footerText": "Portfolio vocal y dirección artística web.",
+    "footerText": "Portfolio profesional y dirección artística web.",
     "socials": [
       {
         "name": "Instagram",
@@ -343,39 +343,6 @@
     }
   },
   "singerPage": {
-    "hero": {
-      "title": "Cantante",
-      "subtitle": "La voz como instrumento del alma",
-      "background": "assets/inicio.jpg"
-    },
-    "history": {
-      "kicker": "Mi Historia",
-      "title": "Una vida dedicada a la música",
-      "image": "assets/galeria_2.jpg",
-      "paragraphs": [
-        "Desde que tengo memoria, la música ha sido mi forma de expresión más auténtica. Comencé mis estudios de canto a los 8 años en el conservatorio de mi ciudad, donde descubrí que mi voz podía contar historias que las palabras solas no alcanzaban a expresar.",
-        "A lo largo de mi carrera, he tenido el privilegio de explorar diversos géneros musicales, desde la lírica clásica hasta el pop contemporáneo, pasando por el jazz y la música tradicional española.",
-        "Mi formación incluye estudios en el Conservatorio Superior de Música, masterclasses con reconocidos maestros internacionales, y una constante búsqueda de la excelencia artística."
-      ]
-    },
-    "repertoire": [
-      {
-        "title": "Lírica & Clásica",
-        "text": "Ópera, zarzuela, lied alemán y canción española de concierto"
-      },
-      {
-        "title": "Pop & Contemporáneo",
-        "text": "Baladas, pop español e internacional, música de cine"
-      },
-      {
-        "title": "Jazz & Soul",
-        "text": "Standards de jazz, bossa nova, rhythm and blues"
-      },
-      {
-        "title": "Tradicional",
-        "text": "Copla, folclore español, música latina y boleros"
-      }
-    ],
     "timeline": [
       {
         "year": "2026",
@@ -411,6 +378,16 @@
         "year": "2020",
         "title": "Debut en Teatro Principal",
         "text": "Concierto en solitario con aforo completo"
+      }
+    ],
+    "press": [
+      {
+        "quote": "Una voz que emociona y transporta al oyente a otra dimensión.",
+        "source": "El País"
+      },
+      {
+        "quote": "Versatilidad y técnica impecable se unen en una intérprete con autenticidad.",
+        "source": "ABC Cultural"
       }
     ],
     "venues": [
@@ -517,50 +494,47 @@
         "logo": "assets/logo_UAM.png"
       }
     ],
-    "press": [
-      {
-        "quote": "Una voz que emociona y transporta al oyente a otra dimensión.",
-        "source": "El País"
-      },
-      {
-        "quote": "Versatilidad y técnica impecable se unen en una intérprete con autenticidad.",
-        "source": "ABC Cultural"
-      }
-    ],
     "cta": {
       "title": "¿Organizas un evento?",
       "text": "Hablemos sobre cómo la música puede hacer tu evento inolvidable",
       "buttonText": "Contactar",
       "buttonUrl": "index.html#contacto"
+    },
+    "history": {
+      "kicker": "Mi Historia",
+      "title": "Una vida dedicada a la música",
+      "image": "assets/galeria_2.jpg",
+      "paragraphs": [
+        "Desde que tengo memoria, la música ha sido mi forma de expresión más auténtica. Comencé mis estudios de canto a los 8 años en el conservatorio de mi ciudad, donde descubrí que mi voz podía contar historias que las palabras solas no alcanzaban a expresar.",
+        "A lo largo de mi carrera, he tenido el privilegio de explorar diversos géneros musicales, desde la lírica clásica hasta el pop contemporáneo, pasando por el jazz y la música tradicional española.",
+        "Mi formación incluye estudios en el Conservatorio Superior de Música, masterclasses con reconocidos maestros internacionales, y una constante búsqueda de la excelencia artística."
+      ]
+    },
+    "repertoire": [
+      {
+        "title": "Lírica & Clásica",
+        "text": "Ópera, zarzuela, lied alemán y canción española de concierto"
+      },
+      {
+        "title": "Pop & Contemporáneo",
+        "text": "Baladas, pop español e internacional, música de cine"
+      },
+      {
+        "title": "Jazz & Soul",
+        "text": "Standards de jazz, bossa nova, rhythm and blues"
+      },
+      {
+        "title": "Tradicional",
+        "text": "Copla, folclore español, música latina y boleros"
+      }
+    ],
+    "hero": {
+      "title": "Cantante",
+      "subtitle": "La voz como instrumento del alma",
+      "background": "assets/inicio.jpg"
     }
   },
   "educatorPage": {
-    "hero": {
-      "title": "Educadora Infantil",
-      "subtitle": "Música, cuentos y magia para los más pequeños",
-      "background": "assets/galeria_4.jpg"
-    },
-    "philosophy": {
-      "kicker": "Mi Filosofía",
-      "title": "La música como puerta a la imaginación",
-      "image": "assets/galeria_4.jpg",
-      "paragraphs": [
-        "Creo profundamente en el poder transformador de la música en la infancia. No se trata solo de enseñar notas o ritmos, sino de abrir ventanas a mundos donde la creatividad no tiene límites.",
-        "Mi trabajo como educadora musical infantil nace de la convicción de que todos los niños son artistas natos."
-      ]
-    },
-    "story": {
-      "kicker": "Mi Cuento Musical",
-      "title": "Una historia que cobra vida con música",
-      "bookTitle": "Las Melodías del Bosque Encantado",
-      "text": "Un cuento musical original para sesiones educativas donde los niños cantan, se mueven y participan en cada escena.",
-      "features": [
-        "Canciones originales",
-        "Personajes memorables",
-        "Actividades de ritmo",
-        "Expresión corporal"
-      ]
-    },
     "methodology": [
       {
         "number": "01",
@@ -583,34 +557,6 @@
         "text": "Momentos para improvisar, crear letras y descubrir su propia voz."
       }
     ],
-    "creations": {
-      "kicker": "Creaciones",
-      "title": "Cuentos, canciones e intervenciones educativas",
-      "intro": "Material propio para convertir cada sesión en una experiencia escénica, musical y participativa.",
-      "items": [
-        {
-          "type": "Cuento musical",
-          "title": "Las Melodías del Bosque Encantado",
-          "image": "assets/galeria_4.jpg",
-          "summary": "Una historia participativa donde los peques cantan, se mueven y ayudan a los personajes a avanzar.",
-          "body": "El cuento funciona como hilo conductor de la sesión: cada escena introduce una emoción, un ritmo o una pequeña canción. Está pensado para grupos infantiles y se puede adaptar por edad y duración."
-        },
-        {
-          "type": "Canción original",
-          "title": "Canciones para rutinas y juego",
-          "image": "assets/galeria_5.jpg",
-          "summary": "Pequeñas piezas cantables para bienvenida, movimiento, calma o cierre de actividad.",
-          "body": "Son canciones sencillas, repetibles y con gestos asociados para que los niños puedan entrar rápido en la dinámica. La música ayuda a ordenar la sesión sin cortar el clima de juego."
-        },
-        {
-          "type": "Intervención",
-          "title": "Sesiones temáticas para centros",
-          "image": "assets/galeria_6.jpg",
-          "summary": "Propuestas a medida para bibliotecas, escuelas, ludotecas y eventos familiares.",
-          "body": "Cada intervención combina narración, voz, movimiento y participación. Se puede orientar a estaciones del año, emociones, cuentos concretos o proyectos del centro."
-        }
-      ]
-    },
     "experiences": {
       "kicker": "Experiencias",
       "title": "Sesiones que dejan recuerdo",
@@ -650,6 +596,95 @@
         }
       ]
     },
+    "cta": {
+      "title": "¿Quieres llevar la música a tu centro o evento?",
+      "text": "Estoy disponible para talleres en escuelas, fiestas y eventos familiares.",
+      "buttonText": "Solicitar presupuesto",
+      "buttonUrl": "index.html#contacto"
+    },
+    "philosophy": {
+      "kicker": "Mi Filosofía",
+      "title": "La música como puerta a la imaginación",
+      "image": "assets/galeria_4.jpg",
+      "paragraphs": [
+        "Creo profundamente en el poder transformador de la música en la infancia. No se trata solo de enseñar notas o ritmos, sino de abrir ventanas a mundos donde la creatividad no tiene límites.",
+        "Mi trabajo como educadora musical infantil nace de la convicción de que todos los niños son artistas natos."
+      ]
+    },
+    "creations": {
+      "kicker": "Creaciones",
+      "title": "Cuentos, canciones e intervenciones educativas",
+      "intro": "Material propio para convertir cada sesión en una experiencia escénica, musical y participativa.",
+      "items": [
+        {
+          "type": "Cuento musical",
+          "title": "Las Melodías del Bosque Encantado",
+          "image": "assets/galeria_4.jpg",
+          "summary": "Una historia participativa donde los peques cantan, se mueven y ayudan a los personajes a avanzar.",
+          "body": "El cuento funciona como hilo conductor de la sesión: cada escena introduce una emoción, un ritmo o una pequeña canción. Está pensado para grupos infantiles y se puede adaptar por edad y duración."
+        },
+        {
+          "type": "Canción original",
+          "title": "Canciones para rutinas y juego",
+          "image": "assets/galeria_5.jpg",
+          "summary": "Pequeñas piezas cantables para bienvenida, movimiento, calma o cierre de actividad.",
+          "body": "Son canciones sencillas, repetibles y con gestos asociados para que los niños puedan entrar rápido en la dinámica. La música ayuda a ordenar la sesión sin cortar el clima de juego."
+        },
+        {
+          "type": "Intervención",
+          "title": "Sesiones temáticas para centros",
+          "image": "assets/galeria_6.jpg",
+          "summary": "Propuestas a medida para bibliotecas, escuelas, ludotecas y eventos familiares.",
+          "body": "Cada intervención combina narración, voz, movimiento y participación. Se puede orientar a estaciones del año, emociones, cuentos concretos o proyectos del centro."
+        }
+      ]
+    },
+    "testimonials": [
+      {
+        "text": "Sofía tiene un don especial para conectar con los niños.",
+        "author": "María García",
+        "role": "Madre de Lucía, 5 años"
+      },
+      {
+        "text": "Los niños estuvieron participando todo el tiempo.",
+        "author": "Carlos Ruiz",
+        "role": "Padre de Pablo, 4 años"
+      },
+      {
+        "text": "Destaca por su profesionalidad y por cómo adapta cada sesión al grupo.",
+        "author": "Elena Martínez",
+        "role": "Directora, E.I. Arcoíris"
+      }
+    ],
+    "story": {
+      "kicker": "Mi Cuento Musical",
+      "title": "Una historia que cobra vida con música",
+      "bookTitle": "Las Melodías del Bosque Encantado",
+      "text": "Un cuento musical original para sesiones educativas donde los niños cantan, se mueven y participan en cada escena.",
+      "features": [
+        "Canciones originales",
+        "Personajes memorables",
+        "Actividades de ritmo",
+        "Expresión corporal"
+      ]
+    },
+    "training": [
+      {
+        "year": "2022",
+        "title": "Máster en Musicoterapia Infantil",
+        "text": "Universidad Complutense de Madrid"
+      },
+      {
+        "year": "2020",
+        "title": "Especialización Método Dalcroze",
+        "text": "Institut Jaques-Dalcroze, Ginebra"
+      }
+    ],
+    "hero": {
+      "title": "Educadora Infantil",
+      "subtitle": "Música, cuentos y magia para los más pequeños",
+      "background": "assets/galeria_4.jpg"
+    },
     "centers": [
       {
         "initials": "CC",
@@ -671,41 +706,6 @@
         "name": "Centro Cultural La Corrala",
         "detail": "Madrid · Desde 2022"
       }
-    ],
-    "testimonials": [
-      {
-        "text": "Sofía tiene un don especial para conectar con los niños.",
-        "author": "María García",
-        "role": "Madre de Lucía, 5 años"
-      },
-      {
-        "text": "Los niños estuvieron participando todo el tiempo.",
-        "author": "Carlos Ruiz",
-        "role": "Padre de Pablo, 4 años"
-      },
-      {
-        "text": "Destaca por su profesionalidad y por cómo adapta cada sesión al grupo.",
-        "author": "Elena Martínez",
-        "role": "Directora, E.I. Arcoíris"
-      }
-    ],
-    "training": [
-      {
-        "year": "2022",
-        "title": "Máster en Musicoterapia Infantil",
-        "text": "Universidad Complutense de Madrid"
-      },
-      {
-        "year": "2020",
-        "title": "Especialización Método Dalcroze",
-        "text": "Institut Jaques-Dalcroze, Ginebra"
-      }
-    ],
-    "cta": {
-      "title": "¿Quieres llevar la música a tu centro o evento?",
-      "text": "Estoy disponible para talleres en escuelas, fiestas y eventos familiares.",
-      "buttonText": "Solicitar presupuesto",
-      "buttonUrl": "index.html#contacto"
-    }
+    ]
   }
 }
